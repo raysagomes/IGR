@@ -1,0 +1,29 @@
+import React from "react";
+import '../style.css';
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+
+
+function HeaderMenuTexto() {
+    return(
+<div className="div-header-menu"> 
+<Nav bg="primary" data-bs-theme="dark" className="justify-content-center  headerMenu" fixed="top">
+        <Nav.Item>
+          <Nav.Link  className="nav-item" href="/">Inicio</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link className="nav-item"   href="/vocabulario">Vocabulário</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link className="nav-item"  href="/conversacoes">Conversações</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link className="nav-item"  href="/gramatica">Gramática</Nav.Link>
+        </Nav.Item>
+        </Nav>
+</div>
+    );
+}
+
+export default HeaderMenuTexto;
