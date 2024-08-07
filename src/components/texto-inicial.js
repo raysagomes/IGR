@@ -25,7 +25,6 @@ Comece agora e junte-se à nossa comunidade de aprendizes!       </h3>
 </Col>
 
 <Col className="extra-pagina-de-textos d-flex flex-column align-items-end">
-    <h2 className="h2-vocab"> Extra </h2>
     <RightNavBar />
     </Col>
       </Row>

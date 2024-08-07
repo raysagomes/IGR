@@ -18,7 +18,6 @@ function ListaConversacoes() {
     </ListGroup>
 </Col>
 <Col className="extra-pagina-de-textos d-flex flex-column align-items-end">
-    <h2 className="h2-vocab"> Extra </h2>
     <RightNavBar />
     </Col>
         </Row>

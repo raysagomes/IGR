@@ -4,13 +4,16 @@ import Logo from '../components/logo';
 import HeaderMenuTexto from '../components/header-menu-texto';
 import Footer from '../components/footer';
 import LinksTextos from '../components/links-textos';
+import { Helmet } from 'react-helmet-async';
 
 import '../style.css';
-import RightNavBar from '../components/right-navbar';
 
 function Textos() {
   return (
-   <div> 
+   <div>
+    <Helmet>
+        <title>Textos</title>
+      </Helmet> 
    <Header />
    <Logo />
    <HeaderMenuTexto />

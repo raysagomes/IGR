@@ -4,7 +4,6 @@ import { LoremIpsum } from 'lorem-ipsum';
 import { Container, Col, Row} from "react-bootstrap";
 import Nav from 'react-bootstrap/Nav';
 import RightNavBar from "./right-navbar";
-import Badge from 'react-bootstrap/Badge';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { Link } from 'react-router-dom'; 
 
@@ -30,29 +29,31 @@ function LinksTextos() {
       </ListGroup.Item>
       <ListGroup.Item
         as="li"
-        className="d-flex justify-content-between align-items-start mb-3"
-      >
+        className="d-flex justify-content-between align-items-start mb-3" >
+
         <div className="ms-2 me-auto">
-          <div className="fw-bold">Subheading</div>
-          <Link to="/texto/texto2" className="text-decoration-none texto-link"> Cras justo odio </Link>
+        <Link to="/texto/texto2" className="text-decoration-none texto-link"> 
+          <div className="fw-bold">The Joy of Baking           </div>
+         Sophie's new hobby. </Link>
 
         </div>
   
       </ListGroup.Item>
-      <ListGroup.Item
+       <ListGroup.Item
         as="li"
-        className="d-flex justify-content-between align-items-start mb-3"
-      >
+        className="d-flex justify-content-between align-items-start mb-3" >
+          
         <div className="ms-2 me-auto">
-          <div className="fw-bold">Subheading</div>
-          <Link to="/texto/texto2" className="text-decoration-none texto-link"> Cras justo odio </Link>
-        </div>
+        <Link to="/texto/texto2" className="text-decoration-none texto-link"> 
+          <div className="fw-bold">The Thrill of Traveling</div>
+         Jack travels around the world. </Link>
 
+        </div>
+  
       </ListGroup.Item>
     </ListGroup>
     </Col>
     <Col className="extra-pagina-de-textos d-flex flex-column align-items-end">
-    <h2 className="h2-inicial-navbar-right1"> Extra </h2>
     <RightNavBar />
     </Col>
     </Row>

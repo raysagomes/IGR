@@ -5,10 +5,15 @@ import Footer from "../../components/footer";
 import Logo from "../../components/logo";
 import RightNavBar from "../../components/right-navbar";
 import { Container, Col, Row, Accordion} from "react-bootstrap";
+import { Helmet } from 'react-helmet-async';
+
 
 export default function Texto1() {
     return(
 <>
+<Helmet>
+        <title>Texto1</title>
+      </Helmet>
 <Header />
 <Logo />
 <HeaderMenuTexto />

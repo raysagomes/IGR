@@ -5,12 +5,16 @@ import HeaderMenuVocabulario from '../components/header-menu-vocabulario';
 import Footer from '../components/footer';
 import TextoInicial from '../components/texto-inicial';
 import ListaVocabulario from '../components/list-vocab';
+import { Helmet } from 'react-helmet-async';
 
 import '../style.css';
 
 function Vocabulário() {
   return (
    <div> 
+    <Helmet>
+        <title>Vocabulário</title>
+      </Helmet>
    <Header />
    <Logo />
    <HeaderMenuVocabulario />

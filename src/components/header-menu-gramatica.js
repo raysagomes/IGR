@@ -14,6 +14,9 @@ function HeaderMenuGramatica() {
           <Nav.Link className="nav-item"  href="/">Inicio</Nav.Link>
         </Nav.Item>
         <Nav.Item>
+          <Nav.Link className="nav-item"  href="/gramatica">Gramática</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
           <Nav.Link  className="nav-item" href="/textos">Textos</Nav.Link>
         </Nav.Item>
         <Nav.Item>
