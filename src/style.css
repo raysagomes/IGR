@@ -1,0 +1,252 @@
+
+.div-header-menu{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+}
+
+.headerMenu {
+    background-color: rgb(0, 170, 255);
+    width: 800px;
+    border-radius: 20px;
+    
+}
+
+.headerMenu .nav-item {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    margin-right: 15px;
+    font-size: 15px;
+} 
+
+.coluna-texto1 .h1-Texto-Inicial{
+margin-top: 40px;
+display: flex;
+justify-items: flex-start;
+margin-left: 80px;
+margin-bottom: 40px;
+}
+
+.coluna-texto1 {
+    margin-right: 30px;
+    margin-bottom: 100px;
+}
+
+.h3-Texto-inicial{
+    font-weight: 300;
+    margin-top: 50px;
+}
+
+.RightNavBar{
+    margin-top: 70px;
+    margin-left: 15px;
+  
+}
+.h2-inicial-navbar-right {
+    margin-bottom: 20px;
+}
+
+.footerdiv {
+    /* margin-top: 80px; */
+    padding: 5px;
+    width: 100%;
+    background-color: rgb(0, 170, 255);
+    color: white;
+    margin-top: auto; 
+
+}
+
+.header-topo {
+    background-color: rgb(0, 170, 255);
+}
+
+.fontcolorwhite {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: white;
+}
+
+.colunasTexto{
+    width:auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.colunasVocabulario{ 
+    width:auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    margin-bottom: 140px;
+    padding: 45px;
+    background-color: rgb(244, 244, 244);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+
+}
+
+.colunasGramatica{ 
+  width:auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+  margin-bottom: 140px;
+  padding: 45px;
+  background-color: rgb(244, 244, 244);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+}
+
+.h2-textos-links{
+    margin-top: 50px;
+    margin-left:50px ;
+}
+
+.h2-inicial-navbar-right1{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.extra-pagina-de-textos{
+height: 200px;
+}
+
+.h2-vocab{
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.coluna-vocab-to-be{
+ margin: 0 50px;
+}
+.card-obs{
+  width:auto;
+  justify-content: center;
+  align-items: center;
+  margin: 0 35px;
+}
+.lista-vocab{
+margin-top: 60px;
+margin-bottom: 80px;
+}
+.lista-vocab ol {
+  list-style-type: decimal;
+}
+
+.texto-link {
+    color: black;
+}
+
+.h5-Textos{
+    font-weight: 300;
+}
+
+.div-accordion-ativididade{
+    display: flex;
+    width: auto;
+    font-size: large;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 80px;
+}
+.Accordion {
+    margin-bottom: 50px;
+    border: 1px black solid;
+}
+.accordion-header{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.h1-questions{
+    margin-bottom: 20px;
+}
+.no-border-accordion .accordion-item {
+    border: none;
+  }
+  
+  .no-border-accordion .accordion-button {
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  .no-border-accordion .accordion-collapse {
+    border: none;
+  }
+  
+  .no-border-accordion .accordion-body {
+    border: none;
+  }
+  
+  .questions{
+    margin-top: 50px;
+    margin-bottom: 110px;
+  }
+
+.Card-right-nav-bar{ 
+  background-color: rgb(0, 170, 255);
+  box-shadow:rgba(0, 0, 0, 0.5);
+}
+
+.borderedRow {
+    border-bottom: 1px solid #000;
+    padding: 5px;
+  }
+  .borderedRow1{
+    background-color: white;
+    border-bottom: 1px solid #000;
+    padding: 5px;
+  }
+  
+  .borderedCol {
+    border-right: 1px solid #000;
+  }
+  
+  .borderedCol:last-child {
+    border-right: none; 
+  }
+  
+  .borderedRow:last-child {
+    border-bottom: none; 
+  }
+  
+  .h1-titulo-da-pagina {
+    margin-top: 50px;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .header-col{ 
+    font-weight: 700;
+    text-align: center;
+    font-size:large;
+    padding: 10px;
+  }
+
+  .p-explicacao{ 
+    font-size: large;
+    margin-left: 40px;
+    margin-top: 15px;
+  }
+  .lista-item{ 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+  }
+  .lista-shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+
+  }
+
+  .Card-right-nav-bar .list-group-item {
+    transition: background-color 0.3s;
+}
+
+.Card-right-nav-bar .list-group-item:hover {
+    background-color: rgb(233, 235, 255); 
+}
