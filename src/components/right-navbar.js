@@ -1,22 +1,24 @@
 import React from "react";
-import { Nav, Navbar, NavItem, Card, ListGroup } from "react-bootstrap"; 
-import { Link } from "react-router-dom";
+import { Card, ListGroup } from "react-bootstrap"; 
+import { useNavigate } from "react-router-dom";
 
 function RightNavBar() {
-    return (
-    <> 
-     <h2 className="h2-vocab"> Extra </h2>
+    const navigate = useNavigate();
 
-<Card className="Card-right-nav-bar">
-  
-      <Card.Header></Card.Header>
-      <ListGroup variant="flush">
-      <Link to="/girias" className="text-decoration-none texto-link">   <ListGroup.Item className="list-group-item">Gírias</ListGroup.Item> </Link>
-      <Link to="/expressoes-populares" className="text-decoration-none texto-link">   <ListGroup.Item className="list-group-item">Expressões populares</ListGroup.Item> </Link>
-      </ListGroup>
-    </Card>
-    </> 
+    return (
+        <> 
+            <h2 className="h2-vocab"> Extra </h2>
+            <Card className="Card-right-nav-bar">
+                <Card.Header></Card.Header>
+                <ListGroup variant="flush" className="lista-shadow">
+                    <ListGroup.Item className="list-group-item" onClick={() => navigate('/extrapages/girias')}>Gírias</ListGroup.Item>
+                    <ListGroup.Item className="list-group-item" onClick={() => navigate('/extrapages/expressoes-populares')}>Expressões populares</ListGroup.Item>
+                    <ListGroup.Item className="list-group-item" onClick={() => navigate('/extrapages/frases-comuns')}>Frases comuns</ListGroup.Item>
+                    <ListGroup.Item className="list-group-item" onClick={() => navigate('/extrapages/verbos-irregulares')}>Verbos irregulares</ListGroup.Item>
+                </ListGroup>
+            </Card>
+        </> 
     );
 }
 
-    export default RightNavBar;
+export default RightNavBar;

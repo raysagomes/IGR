@@ -15,12 +15,13 @@ function TextoInicial() {
         <h1 className="h1-Texto-Inicial"> Bem-vindo(a) ao IGR!
          </h1> 
         <h3 className="h3-Texto-inicial">
-        Aqui no IGR, oferecemos uma variedade de recursos para ajudar você a aprimorar suas habilidades em inglês, seja você um iniciante ou um falante avançado. Navegue por nossas seções para explorar:
+     <p>    Aqui no IGR, oferecemos uma variedade de recursos para ajudar você a aprimorar suas habilidades em inglês, seja você um iniciante ou um falante avançado. Navegue por nossas seções para explorar: </p>
 
-Textos: Leitura e compreensão com materiais variados para todos os níveis.
-Vocabulário: Expanda seu vocabulário com listas de palavras e frases úteis.
-Gramática: Aprenda e pratique regras gramaticais essenciais.
-Conversações: Melhore suas habilidades de fala com exemplos e práticas.
+<p> <p className="fw-bold">Textos: </p> Leitura e compreensão com materiais variados para todos os níveis.</p>
+<p><p className="fw-bold">Vocabulário: </p>  Expanda seu vocabulário com listas de palavras e frases úteis. </p>
+<p><p className="fw-bold">Gramática: </p> Aprenda e pratique regras gramaticais essenciais.</p>
+<p><p className="fw-bold">Conversações: </p>  Melhore suas habilidades de fala com exemplos e práticas.</p>
+<br />
 Comece agora e junte-se à nossa comunidade de aprendizes!       </h3>
 </Col>
 

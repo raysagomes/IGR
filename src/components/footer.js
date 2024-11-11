@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 function Footer() {
     return (
         <>
@@ -19,7 +20,7 @@ function Footer() {
                             <Link to="/textos" className="fontcolorwhite nav-link p-0">Textos</Link>
                         </li>
                         <li className="nav-item mb-2">
-                            <Link to="/vocabulario" className="fontcolorwhite nav-link p-0">Vocabulário</Link>
+                            <Link to="/vocab" className="fontcolorwhite nav-link p-0">Vocabulário</Link>
                         </li>
                         <li className="nav-item mb-2">
                             <Link to="/conversacoes" className="fontcolorwhite nav-link p-0">Conversações</Link>

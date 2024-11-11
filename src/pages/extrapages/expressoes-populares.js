@@ -1,10 +1,10 @@
 import React from "react";
 
-import Header from "../components/header";
+import Header from "../../components/header";
 import { Helmet} from "react-helmet-async";
-import Logo from "../components/logo";
-import Footer from "../components/footer";
-import HeaderMenuTexto from "../components/header-menu-texto";
+import Logo from "../../components/logo";
+import Footer from "../../components/footer";
+import HeaderMenuTexto from "../../components/header-menu-texto";
 
 export default function ExpressoesPopulares() {
     return (
@@ -16,6 +16,7 @@ export default function ExpressoesPopulares() {
 <Header />
 <Logo />
 <HeaderMenuTexto />
+<p>EM BREVE </p>
 <Footer />
 </div>
 </>

@@ -85,10 +85,24 @@ margin-bottom: 40px;
     margin-top: 90px;
     margin-bottom: 140px;
     padding: 45px;
-    background-color: rgb(225, 225, 225);
+    background-color: rgb(244, 244, 244);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 25px;
+
 }
+
+.colunasGramatica{ 
+  width:auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+  margin-bottom: 140px;
+  padding: 45px;
+  background-color: rgb(244, 244, 244);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+}
+
 .h2-textos-links{
     margin-top: 50px;
     margin-left:50px ;
@@ -107,13 +121,21 @@ height: 200px;
     margin-top: 60px;
     margin-bottom: 20px;
 }
-
+.coluna-vocab-to-be{
+ margin: 0 50px;
+}
+.card-obs{
+  width:auto;
+  justify-content: center;
+  align-items: center;
+  margin: 0 35px;
+}
 .lista-vocab{
 margin-top: 60px;
 margin-bottom: 80px;
 }
 .lista-vocab ol {
-  list-style-type: decimal; /* Garante que a lista seja numerada */
+  list-style-type: decimal;
 }
 
 .texto-link {
@@ -163,6 +185,7 @@ margin-bottom: 80px;
   }
   
   .questions{
+    margin-top: 50px;
     margin-bottom: 110px;
   }
 
@@ -212,3 +235,18 @@ margin-bottom: 80px;
     margin-left: 40px;
     margin-top: 15px;
   }
+  .lista-item{ 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+  }
+  .lista-shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+
+  }
+
+  .Card-right-nav-bar .list-group-item {
+    transition: background-color 0.3s;
+}
+
+.Card-right-nav-bar .list-group-item:hover {
+    background-color: rgb(233, 235, 255); 
+}

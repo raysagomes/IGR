@@ -44,7 +44,7 @@ export default function Texto2() {
       <Accordion.Item eventKey="0" className="Accordion">
         <Accordion.Header className="accordion-header"><h2>Tradução do texto</h2></Accordion.Header>
         <Accordion.Body>
-            <h2>A felicidade de Assar</h2>
+            <h2>A felicidade de Cozinhar</h2>
             <br />
         <p>
           Sophie encontrou alegria em cozinhar. Começou como uma forma de relaxar após um dia estressante de trabalho, mas rapidamente se tornou um hobby querido. Ela adorava experimentar receitas diferentes, desde os clássicos biscoitos de chocolate até bolos e doces elaborados.
@@ -60,48 +60,59 @@ export default function Texto2() {
     </Row>
     </Container>
     
-<Container className="questions">
-        <Row> 
-<Col> 
-        <h1 className="h1-questions"> Questions </h1>
-        <Accordion className="no-border-accordion"> 
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>1. How did Sophie discover her joy in baking?</Accordion.Header>
-        <Accordion.Body>
-        Sophie discovered her joy in baking as a way to relax after a stressful day at work.        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="1">
-        <Accordion.Header>2. What kinds of recipes does Sophie enjoy experimenting with?      </Accordion.Header>
-        <Accordion.Body>
-        Sophie enjoys experimenting with recipes for classic chocolate chip cookies, elaborate cakes, and pastries.        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="2">
-        <Accordion.Header>3. What part of the baking process does Sophie enjoy the most?
-        </Accordion.Header>
-        <Accordion.Body>
-        Sophie enjoys the process of measuring, mixing, and decorating the most.
-        </Accordion.Body>        
-              </Accordion.Item>
-      <Accordion.Item eventKey="3">
-        <Accordion.Header>4. How does Sophie's kitchen usually smell?
-        </Accordion.Header>
-        <Accordion.Body>
-        Sophie's kitchen usually smells like freshly baked goods.
-        </Accordion.Body>
-            </Accordion.Item>
-      <Accordion.Item eventKey="4">
-        <Accordion.Header>5. How does Sophie share her baking creations?
-        </Accordion.Header>
-        <Accordion.Body>
-        Sophie shares her baking creations with friends and family.
-        </Accordion.Body>
-      </Accordion.Item>
+    <Container className="questions">
+  <Row> 
+    <Col> 
+      <h1 className="h1-questions">Questions</h1>
+      <Accordion className="no-border-accordion"> 
+        <Accordion.Item eventKey="0">
+          <Accordion.Header>1. How did Sophie discover her joy in baking?</Accordion.Header>
+          <Accordion.Body>
+            <h5>Como Sophie descobriu sua alegria em cozinhar?</h5>
+            Sophie discovered her joy in baking as a way to relax after a stressful day at work. <br />
+            <i>Sophie descobriu sua alegria em cozinhar como uma forma de relaxar após um dia estressante no trabalho.</i>
+          </Accordion.Body>
+        </Accordion.Item>
 
-    </Accordion>
+        <Accordion.Item eventKey="1">
+          <Accordion.Header>2. What kinds of recipes does Sophie enjoy experimenting with?</Accordion.Header>
+          <Accordion.Body>
+            <h5>Com que tipos de receitas Sophie gosta de experimentar?</h5>
+            Sophie enjoys experimenting with recipes for classic chocolate chip cookies, elaborate cakes, and pastries. <br />
+            <i>Sophie gosta de experimentar receitas de biscoitos clássicos com gotas de chocolate, bolos elaborados e doces.</i>
+          </Accordion.Body>
+        </Accordion.Item>
 
-</Col>
-        </Row>
-     </Container>
+        <Accordion.Item eventKey="2">
+          <Accordion.Header>3. What part of the baking process does Sophie enjoy the most?</Accordion.Header>
+          <Accordion.Body>
+            <h5>Qual parte do processo de cozinhar Sophie mais gosta?</h5>
+            Sophie enjoys the process of measuring, mixing, and decorating the most. <br />
+            <i>Sophie gosta mais do processo de medir, misturar e decorar.</i>
+          </Accordion.Body>        
+        </Accordion.Item>
+
+        <Accordion.Item eventKey="3">
+          <Accordion.Header>4. How does Sophie's kitchen usually smell?</Accordion.Header>
+          <Accordion.Body>
+            <h5>Como a cozinha de Sophie geralmente cheira?</h5>
+            Sophie's kitchen usually smells like freshly baked goods. <br />
+            <i>A cozinha de Sophie geralmente cheira a produtos recém-assados.</i>
+          </Accordion.Body>
+        </Accordion.Item>
+
+        <Accordion.Item eventKey="4">
+          <Accordion.Header>5. How does Sophie share her baking creations?</Accordion.Header>
+          <Accordion.Body>
+            <h5>Como Sophie compartilha suas criações culinárias?</h5>
+            Sophie shares her baking creations with friends and family. <br />
+            <i>Sophie compartilha suas criações culinárias com amigos e familiares.</i>
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
+    </Col> 
+  </Row>
+</Container>
 <Footer />
 </>
     );

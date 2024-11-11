@@ -20,7 +20,7 @@ function HeaderMenuGramatica() {
           <Nav.Link  className="nav-item" href="/textos">Textos</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link className="nav-item"   href="/vocabulario">Vocabulário</Nav.Link>
+          <Nav.Link className="nav-item"   href="/vocab">Vocabulário</Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link className="nav-item"  href="/conversacoes">Conversações</Nav.Link>
