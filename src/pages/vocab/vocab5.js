@@ -34,7 +34,7 @@ export default function Vocab5() {
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Asparagus</Col>
-  <Col className="borderedCol">Áspárâgus</Col>
+  <Col className="borderedCol">Áspérâgâs</Col>
   <Col className="borderedCol">Aspargo</Col>
 </Row>
 <Row className="borderedRow1">
@@ -49,27 +49,27 @@ export default function Vocab5() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Brussels Sprouts</Col>
-  <Col className="borderedCol">Brússêls Spráuts</Col>
+  <Col className="borderedCol">Brúâssous Spruáuts</Col>
   <Col className="borderedCol">Couve-de-Bruxelas</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Cabbage</Col>
-  <Col className="borderedCol">Kábidj</Col>
+  <Col className="borderedCol">Kébidj</Col>
   <Col className="borderedCol">Repolho</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Carrot</Col>
-  <Col className="borderedCol">Kárót</Col>
+  <Col className="borderedCol">Kéruót</Col>
   <Col className="borderedCol">Cenoura</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Cauliflower</Col>
-  <Col className="borderedCol">Káuliflaur</Col>
+  <Col className="borderedCol">Kóuliflauâr</Col>
   <Col className="borderedCol">Couve-Flor</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Celery</Col>
-  <Col className="borderedCol">Séləri</Col>
+  <Col className="borderedCol">Sélêrui</Col>
   <Col className="borderedCol">Aipo</Col>
 </Row>
 <Row className="borderedRow">
@@ -84,12 +84,12 @@ export default function Vocab5() {
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Cucumber</Col>
-  <Col className="borderedCol">Cúcúmbêr</Col>
+  <Col className="borderedCol">kiúcâmbêr</Col>
   <Col className="borderedCol">Pepino</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Eggplant</Col>
-  <Col className="borderedCol">Égplânt</Col>
+  <Col className="borderedCol">Égplent</Col>
   <Col className="borderedCol">Berinjela</Col>
 </Row>
 <Row className="borderedRow">
@@ -99,32 +99,32 @@ export default function Vocab5() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Green Onion</Col>
-  <Col className="borderedCol">Grín Ônion</Col>
+  <Col className="borderedCol">Gruín Ôniân</Col>
   <Col className="borderedCol">Cebolinha</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Kale</Col>
-  <Col className="borderedCol">Kêil</Col>
+  <Col className="borderedCol">Kêiou</Col>
   <Col className="borderedCol">Couve</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Lettuce</Col>
-  <Col className="borderedCol">Létis</Col>
+  <Col className="borderedCol">Lérâci</Col>
   <Col className="borderedCol">Alface</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Mushroom</Col>
-  <Col className="borderedCol">Múshrûm</Col>
+  <Col className="borderedCol">Mâshrûm</Col>
   <Col className="borderedCol">Cogumelo</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Okra</Col>
-  <Col className="borderedCol">Ókrâ</Col>
+  <Col className="borderedCol">Ókruâ</Col>
   <Col className="borderedCol">Quiabo</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Onion</Col>
-  <Col className="borderedCol">Ônion</Col>
+  <Col className="borderedCol">Ôniân</Col>
   <Col className="borderedCol">Cebola</Col>
 </Row>
 <Row className="borderedRow1">
@@ -134,7 +134,7 @@ export default function Vocab5() {
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Pepper</Col>
-  <Col className="borderedCol">Péprêr</Col>
+  <Col className="borderedCol">Pépêr</Col>
   <Col className="borderedCol">Pimenta</Col>
 </Row>
 <Row className="borderedRow1">
@@ -149,22 +149,22 @@ export default function Vocab5() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Radish</Col>
-  <Col className="borderedCol">Rádish</Col>
+  <Col className="borderedCol">Ruédish</Col>
   <Col className="borderedCol">Rabanete</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Salad</Col>
-  <Col className="borderedCol">Sálâd</Col>
+  <Col className="borderedCol">Sélâd</Col>
   <Col className="borderedCol">Salada</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Spinach</Col>
-  <Col className="borderedCol">Spínách</Col>
+  <Col className="borderedCol">Spínêch</Col>
   <Col className="borderedCol">Espinafre</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Sweet Potato</Col>
-  <Col className="borderedCol">Swít Pôteitô</Col>
+  <Col className="borderedCol">Swít Pôteirô</Col>
   <Col className="borderedCol">Batata Doce</Col>
 </Row>
 <Row className="borderedRow1">
@@ -174,7 +174,7 @@ export default function Vocab5() {
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Zucchini</Col>
-  <Col className="borderedCol">Zucínî</Col>
+  <Col className="borderedCol">Zukínî</Col>
   <Col className="borderedCol">Abobrinha</Col>
 </Row>
 

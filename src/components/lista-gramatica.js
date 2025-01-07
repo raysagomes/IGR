@@ -93,9 +93,46 @@ function ListaGramatica() {
         </div>
   
       </ListGroup.Item>
+      <ListGroup.Item
+        as="li"
+        className="d-flex justify-content-between align-items-start mb-3 lista-item" >
+          
+        <div className="ms-2 me-auto">
+        <Link to="/gramatica/gramatica8" className="text-decoration-none texto-link"> 
+          <div className="fw-bold">Formas Comparativas e Superlativas</div> </Link>
+
+        </div>
+  
+      </ListGroup.Item>
+
+      <ListGroup.Item
+        as="li"
+        className="d-flex justify-content-between align-items-start mb-3 lista-item" >
+          
+        <div className="ms-2 me-auto">
+        <Link to="/gramatica/gramatica9" className="text-decoration-none texto-link"> 
+          <div className="fw-bold">    Tempos Contínuos e Perfeitos          </div>
+          Presente contínuo (estou falando), passado contínuo (estava falando), e presente perfeito (tenho falado). 
+           </Link>
+
+        </div>
+      </ListGroup.Item>
+
+      <ListGroup.Item
+        as="li"
+        className="d-flex justify-content-between align-items-start mb-3 lista-item" >
+          
+        <div className="ms-2 me-auto">
+        <Link to="/gramatica/gramatica10" className="text-decoration-none texto-link"> 
+          <div className="fw-bold">Adjetivos e Advérbios</div> </Link>
+
+        </div>
+  
+      </ListGroup.Item>
     </ListGroup>
+
     </Col>
-    <Col className="extra-pagina-de-textos d-flex flex-column align-items-end">
+    <Col xs={12} md={3} className="extra-pagina-de-textos d-flex flex-column align-items-end">
     <RightNavBar />
     </Col>
     </Row>

@@ -29,27 +29,27 @@ export default function Vocab8() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Blow Dryer</Col>
-  <Col className="borderedCol">Blóu Dráir</Col>
+  <Col className="borderedCol">Blôu Druáiêr</Col>
   <Col className="borderedCol">Secador de Cabelo</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Bubble</Col>
-  <Col className="borderedCol">Bóbôl</Col>
+  <Col className="borderedCol">Bâbôu</Col>
   <Col className="borderedCol">Bolha</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Comb</Col>
-  <Col className="borderedCol">Kôm</Col>
+  <Col className="borderedCol">Kômb</Col>
   <Col className="borderedCol">Pente</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Deodorant</Col>
-  <Col className="borderedCol">Diôdôránt</Col>
+  <Col className="borderedCol">Diôdôrent</Col>
   <Col className="borderedCol">Desodorante</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Drip</Col>
-  <Col className="borderedCol">Dríp</Col>
+  <Col className="borderedCol">Druíp</Col>
   <Col className="borderedCol">Gotejamento</Col>
 </Row>
 <Row className="borderedRow">
@@ -64,7 +64,7 @@ export default function Vocab8() {
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Hairbrush</Col>
-  <Col className="borderedCol">Rêibrâsh</Col>
+  <Col className="borderedCol">Rérbruâsh</Col>
   <Col className="borderedCol">Escova de Cabelo</Col>
 </Row>
 <Row className="borderedRow1">
@@ -79,22 +79,22 @@ export default function Vocab8() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Mirror</Col>
-  <Col className="borderedCol">Mírrôr</Col>
+  <Col className="borderedCol">Míruôr</Col>
   <Col className="borderedCol">Espelho</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Nail Clippers</Col>
-  <Col className="borderedCol">Néil Klíppèrs</Col>
+  <Col className="borderedCol">Neiou Klíppèrs</Col>
   <Col className="borderedCol">Cortador de Unha</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Nail Polish</Col>
-  <Col className="borderedCol">Néil Pólîsh</Col>
+  <Col className="borderedCol">Neiou Pólîsh</Col>
   <Col className="borderedCol">Esmalte</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Perfume</Col>
-  <Col className="borderedCol">Pêrfyûm</Col>
+  <Col className="borderedCol">Pêrfiûm</Col>
   <Col className="borderedCol">Perfume</Col>
 </Row>
 <Row className="borderedRow1">
@@ -104,12 +104,12 @@ export default function Vocab8() {
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Scale</Col>
-  <Col className="borderedCol">Skéil</Col>
+  <Col className="borderedCol">Skéiou</Col>
   <Col className="borderedCol">Balança</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Shampoo</Col>
-  <Col className="borderedCol">Shámpu</Col>
+  <Col className="borderedCol">Shempu</Col>
   <Col className="borderedCol">Xampu</Col>
 </Row>
 <Row className="borderedRow">
@@ -129,7 +129,7 @@ export default function Vocab8() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Soap</Col>
-  <Col className="borderedCol">Sôp</Col>
+  <Col className="borderedCol">Sôup</Col>
   <Col className="borderedCol">Sabão</Col>
 </Row>
 <Row className="borderedRow">
@@ -154,12 +154,12 @@ export default function Vocab8() {
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Towel Rack</Col>
-  <Col className="borderedCol">Tául Rák</Col>
+  <Col className="borderedCol">Tául Ruék</Col>
   <Col className="borderedCol">Toalheiro</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Toothpaste</Col>
-  <Col className="borderedCol">Túspêist</Col>
+  <Col className="borderedCol">Tútpêist</Col>
   <Col className="borderedCol">Creme Dental</Col>
 </Row>
 

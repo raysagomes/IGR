@@ -43,37 +43,37 @@ export default function Vocab2() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Brown</Col>
-  <Col className="borderedCol">Braun</Col>
+  <Col className="borderedCol">Bruaun</Col>
   <Col className="borderedCol">Marrom</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Dark Blue</Col>
-  <Col className="borderedCol">Dárk Blu</Col>
+  <Col className="borderedCol">Dárk Blú</Col>
   <Col className="borderedCol">Azul Escuro</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Dark Green</Col>
-  <Col className="borderedCol">Dárk Grin</Col>
+  <Col className="borderedCol">Dárk Gruin</Col>
   <Col className="borderedCol">Verde Escuro</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Green</Col>
-  <Col className="borderedCol">Grin</Col>
+  <Col className="borderedCol">Gruin</Col>
   <Col className="borderedCol">Verde</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Grey or Gray</Col>
-  <Col className="borderedCol">Gréi or Grêi</Col>
+  <Col className="borderedCol">Gruéi or Gruêi</Col>
   <Col className="borderedCol">Cinza ou Cinza</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Light Blue</Col>
-  <Col className="borderedCol">Láit Blu</Col>
+  <Col className="borderedCol">Láit Blú</Col>
   <Col className="borderedCol">Azul Claro</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Light Green</Col>
-  <Col className="borderedCol">Láit Grin</Col>
+  <Col className="borderedCol">Láit Gruin</Col>
   <Col className="borderedCol">Verde Claro</Col>
 </Row>
 <Row className="borderedRow">
@@ -83,7 +83,7 @@ export default function Vocab2() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Orange</Col>
-  <Col className="borderedCol">Ôrindj</Col>
+  <Col className="borderedCol">Ôruindj</Col>
   <Col className="borderedCol">Laranja</Col>
 </Row>
 <Row className="borderedRow">
@@ -93,12 +93,12 @@ export default function Vocab2() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Purple</Col>
-  <Col className="borderedCol">Pârpul</Col>
+  <Col className="borderedCol">Pârpou</Col>
   <Col className="borderedCol">Roxo</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Red</Col>
-  <Col className="borderedCol">Réd</Col>
+  <Col className="borderedCol">Ruéd</Col>
   <Col className="borderedCol">Vermelho</Col>
 </Row>
 <Row className="borderedRow1">

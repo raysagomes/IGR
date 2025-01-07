@@ -23,8 +23,10 @@ export default function Gramatica2() {
         <h2 className="h1-Texto-Inicial"> Substantivo e pronomes </h2> 
         <h4 className="h5-Textos">
         <p>Substantives are words that represent people, places, objects, or ideas.</p>
+<h5><i>Substantivos são palavras que representam pessoas, lugares, objetos ou ideias.</i></h5>
 <br />
 <p><h3>Examples</h3></p>
+<h5><i>Exemplos</i></h5>
 <br />
 <p>People: Maria, teacher, child</p>
 <h5><i>Pessoas: Maria, professor, criança</i></h5>
@@ -81,6 +83,7 @@ export default function Gramatica2() {
 </Col>
     </Row>
     </Container>
+    
     <Container className="questions">
         <Row> 
 <Col> 

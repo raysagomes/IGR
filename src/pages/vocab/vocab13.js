@@ -29,7 +29,7 @@ export default function Vocab13() {
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Beard</Col>
-  <Col className="borderedCol">Bîrd</Col>
+  <Col className="borderedCol">Bîârd</Col>
   <Col className="borderedCol">Barba</Col>
 </Row>
 <Row className="borderedRow1">
@@ -74,7 +74,7 @@ export default function Vocab13() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Moustache</Col>
-  <Col className="borderedCol">Mústâsh</Col>
+  <Col className="borderedCol">Mústésh</Col>
   <Col className="borderedCol">Bigode</Col>
 </Row>
 <Row className="borderedRow">
@@ -89,7 +89,7 @@ export default function Vocab13() {
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Tongue</Col>
-  <Col className="borderedCol">Tâng</Col>
+  <Col className="borderedCol">Tôngui</Col>
   <Col className="borderedCol">Língua</Col>
 </Row>
 

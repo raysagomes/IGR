@@ -31,7 +31,7 @@ export default function Texto1() {
 
     </h4>
 </Col>
-<Col className="extra-pagina-de-textos d-flex flex-column align-items-end">
+<Col xs={12} md={3} className="extra-pagina-de-textos d-flex flex-column align-items-end ">
     <RightNavBar />
     </Col>
       </Row>

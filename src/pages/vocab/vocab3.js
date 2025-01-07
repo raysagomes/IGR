@@ -29,12 +29,12 @@ export default function Vocab3() {
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Beer</Col>
-  <Col className="borderedCol">Bír</Col>
+  <Col className="borderedCol">Bíêr</Col>
   <Col className="borderedCol">Cerveja</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Cocktail</Col>
-  <Col className="borderedCol">Cóctéil</Col>
+  <Col className="borderedCol">Cóctêil</Col>
   <Col className="borderedCol">Coquetel</Col>
 </Row>
 <Row className="borderedRow">
@@ -44,12 +44,12 @@ export default function Vocab3() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Coke, Soda, Soft Drink</Col>
-  <Col className="borderedCol">Kôk, Sóudâ, Sóft Drínk</Col>
+  <Col className="borderedCol">Kôuki, Sôudâ, Sóft Druínk</Col>
   <Col className="borderedCol">Coca-Cola, Refrigerantes</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Juice</Col>
-  <Col className="borderedCol">Jús</Col>
+  <Col className="borderedCol">Júuci</Col>
   <Col className="borderedCol">Suco</Col>
 </Row>
 <Row className="borderedRow1">
@@ -64,7 +64,7 @@ export default function Vocab3() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Water</Col>
-  <Col className="borderedCol">Wôter</Col>
+  <Col className="borderedCol">Wórêr/Wótêr</Col>
   <Col className="borderedCol">Água</Col>
 </Row>
 <Row className="borderedRow">
@@ -79,7 +79,7 @@ export default function Vocab3() {
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Brandy</Col>
-  <Col className="borderedCol">Brândi</Col>
+  <Col className="borderedCol">Bruêndi</Col>
   <Col className="borderedCol">Brandy</Col>
 </Row>
 <Row className="borderedRow1">

@@ -1,4 +1,20 @@
+/* body {
+  background-image: url('images/background-pencil.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  
+}
 
+.container {
+  background-color: white;
+  opacity: 1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
 .div-header-menu{
     display: flex;
     justify-content: center;
@@ -115,8 +131,11 @@ margin-bottom: 40px;
 
 .extra-pagina-de-textos{
 height: 200px;
+margin-bottom: 50px;
 }
-
+.margin-20-fim{
+margin-bottom: 50px;
+}
 .h2-vocab{
     margin-top: 60px;
     margin-bottom: 20px;
@@ -145,7 +164,10 @@ margin-bottom: 80px;
 .h5-Textos{
     font-weight: 300;
 }
-
+.h5-conversa{
+  font-weight: 200;
+  margin-top: 40px;
+}
 .div-accordion-ativididade{
     display: flex;
     width: auto;
@@ -238,6 +260,9 @@ margin-bottom: 80px;
   .lista-item{ 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
   }
+    .lista-item:hover{ 
+      background-color: rgb(218, 243, 255);
+    }
   .lista-shadow {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
 

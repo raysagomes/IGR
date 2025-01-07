@@ -44,7 +44,7 @@ export default function Vocab9() {
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Bed Frame</Col>
-  <Col className="borderedCol">Béd Fréim</Col>
+  <Col className="borderedCol">Béd Fruêim</Col>
   <Col className="borderedCol">Estrutura da Cama</Col>
 </Row>
 <Row className="borderedRow1">
@@ -59,12 +59,12 @@ export default function Vocab9() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Chest of Drawers</Col>
-  <Col className="borderedCol">Chést ôf Dráwers</Col>
+  <Col className="borderedCol">Chést ôf Drówers</Col>
   <Col className="borderedCol">Caixa com Gavetas</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Chest, Trunk</Col>
-  <Col className="borderedCol">Chést, Trânk</Col>
+  <Col className="borderedCol">Chést, Truânk</Col>
   <Col className="borderedCol">Baú</Col>
 </Row>
 <Row className="borderedRow1">
@@ -74,12 +74,12 @@ export default function Vocab9() {
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Drawer</Col>
-  <Col className="borderedCol">Dráwêr</Col>
+  <Col className="borderedCol">Drówêr</Col>
   <Col className="borderedCol">Gaveta</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Dresser</Col>
-  <Col className="borderedCol">Dréssêr</Col>
+  <Col className="borderedCol">Druéssêr</Col>
   <Col className="borderedCol">Cômoda</Col>
 </Row>
 <Row className="borderedRow">
@@ -94,12 +94,12 @@ export default function Vocab9() {
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Mattress</Col>
-  <Col className="borderedCol">Máttrês</Col>
+  <Col className="borderedCol">Métrués</Col>
   <Col className="borderedCol">Colchão</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Nightstand</Col>
-  <Col className="borderedCol">Náitstând</Col>
+  <Col className="borderedCol">Náit-istend</Col>
   <Col className="borderedCol">Criado-mudo</Col>
 </Row>
 <Row className="borderedRow">
@@ -109,17 +109,17 @@ export default function Vocab9() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Sheet</Col>
-  <Col className="borderedCol">Shít</Col>
+  <Col className="borderedCol">Shiit</Col>
   <Col className="borderedCol">Lençol</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Sofa</Col>
-  <Col className="borderedCol">Sófá</Col>
+  <Col className="borderedCol">Sôufá</Col>
   <Col className="borderedCol">Sofá</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Table</Col>
-  <Col className="borderedCol">Téibl</Col>
+  <Col className="borderedCol">Téibou</Col>
   <Col className="borderedCol">Mesa</Col>
 </Row>
 <Row className="borderedRow">
