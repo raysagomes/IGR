@@ -29,27 +29,27 @@ export default function Vocab6() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Burger</Col>
-  <Col className="borderedCol">Búrgêr</Col>
+  <Col className="borderedCol">Bârgêr</Col>
   <Col className="borderedCol">Hambúrguer</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Cheeseburger</Col>
-  <Col className="borderedCol">Chísbúrgêr</Col>
+  <Col className="borderedCol">Chízbârgêr</Col>
   <Col className="borderedCol">Cheeseburguer</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Chicken Nuggets</Col>
-  <Col className="borderedCol">Tchíkin Nágêts</Col>
+  <Col className="borderedCol">Tchíken Nágêts</Col>
   <Col className="borderedCol">Nuggets de Frango</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Chicken Wings</Col>
-  <Col className="borderedCol">Tchíkin Wíngs</Col>
+  <Col className="borderedCol">Tchíken Uíngs</Col>
   <Col className="borderedCol">Asas de Frango</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Fried Chicken</Col>
-  <Col className="borderedCol">Fráid Tchíkin</Col>
+  <Col className="borderedCol">Fruáid Tchíken</Col>
   <Col className="borderedCol">Frango Frito</Col>
 </Row>
 <Row className="borderedRow">
@@ -64,7 +64,7 @@ export default function Vocab6() {
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Onion Rings</Col>
-  <Col className="borderedCol">Ônion Ríngs</Col>
+  <Col className="borderedCol">Ôniân Ruíngs</Col>
   <Col className="borderedCol">Anéis de Cebola</Col>
 </Row>
 <Row className="borderedRow1">
@@ -74,17 +74,17 @@ export default function Vocab6() {
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Quesadilla</Col>
-  <Col className="borderedCol">Kuesadílâ</Col>
+  <Col className="borderedCol">Kesadílâ</Col>
   <Col className="borderedCol">Quesadilla</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Fries</Col>
-  <Col className="borderedCol">Fráiz</Col>
+  <Col className="borderedCol">Fruáiz</Col>
   <Col className="borderedCol">Batata Frita</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Sandwich</Col>
-  <Col className="borderedCol">Sánduích</Col>
+  <Col className="borderedCol">Senduích</Col>
   <Col className="borderedCol">Sanduíche</Col>
 </Row>
 <Row className="borderedRow1">
@@ -94,7 +94,7 @@ export default function Vocab6() {
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Wrap</Col>
-  <Col className="borderedCol">Ráp</Col>
+  <Col className="borderedCol">Ruáp</Col>
   <Col className="borderedCol">Wrap</Col>
 </Row>
 

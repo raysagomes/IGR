@@ -11,7 +11,7 @@ function TextoInicial() {
 
 <Container>
       <Row>
-        <Col md="auto" xs lg="7" className="coluna-texto1">
+        <Col md="auto" xs lg="8" className="coluna-texto1">
         <h1 className="h1-Texto-Inicial"> Bem-vindo(a) ao IGR!
          </h1> 
         <h3 className="h3-Texto-inicial">
@@ -25,9 +25,10 @@ function TextoInicial() {
 Comece agora e junte-se à nossa comunidade de aprendizes!       </h3>
 </Col>
 
-<Col className="extra-pagina-de-textos d-flex flex-column align-items-end">
+<Col xs={12} md={3} className="extra-pagina-de-textos d-flex flex-column align-items-end margin-20-fim">
     <RightNavBar />
     </Col>
+
       </Row>
        
     </Container>

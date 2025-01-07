@@ -30,7 +30,7 @@ export default function Texto6() {
         <p>Even though the animals were not as exciting as Silvie had anticipated, she still enjoyed her time at the zoo, laughing at the unexpected sight of the sleepy lions and the comical monkeys. It was a day full of surprises, and Silvie left the zoo with a big smile on her face, grateful for the experience.</p>
       </h4>
     </Col>
-    <Col className="extra-pagina-de-textos d-flex flex-column align-items-end">
+    <Col xs={12} md={3} className="extra-pagina-de-textos d-flex flex-column align-items-end">
     <RightNavBar />
     </Col>
   </Row>

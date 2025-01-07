@@ -29,7 +29,7 @@ export default function Texto5() {
         <p>The afternoon flew by, and Thay felt completely relaxed, with no worries at all. As night fell, she was happy and satisfied, knowing it had been the perfect day.</p>
       </h4>
     </Col>
-    <Col className="extra-pagina-de-textos d-flex flex-column align-items-end">
+    <Col xs={12} md={3} className="extra-pagina-de-textos d-flex flex-column align-items-end">
     <RightNavBar />
     </Col>
   </Row>

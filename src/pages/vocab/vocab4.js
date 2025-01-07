@@ -28,37 +28,37 @@ export default function Vocab4() {
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Apple</Col>
-  <Col className="borderedCol">Ápəl</Col>
+  <Col className="borderedCol">Épou</Col>
   <Col className="borderedCol">Maçã</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Avocado</Col>
-  <Col className="borderedCol">Avocádo</Col>
+  <Col className="borderedCol">Avocádou</Col>
   <Col className="borderedCol">Abacate</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Banana</Col>
-  <Col className="borderedCol">Bănânâ</Col>
+  <Col className="borderedCol">Bănena</Col>
   <Col className="borderedCol">Banana</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">BlackBerry</Col>
-  <Col className="borderedCol">Bléki Béri</Col>
+  <Col className="borderedCol">Bléki Bérui</Col>
   <Col className="borderedCol">Amora Silvestre</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Cherry</Col>
-  <Col className="borderedCol">Chéri</Col>
+  <Col className="borderedCol">Chérui</Col>
   <Col className="borderedCol">Cereja</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Coconut</Col>
-  <Col className="borderedCol">Côcônut</Col>
+  <Col className="borderedCol">Côucanât</Col>
   <Col className="borderedCol">Coco</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Dragon Fruit</Col>
-  <Col className="borderedCol">Drágon Frút</Col>
+  <Col className="borderedCol">Druágon Frút</Col>
   <Col className="borderedCol">Pitaya</Col>
 </Row>
 <Row className="borderedRow1">
@@ -68,7 +68,7 @@ export default function Vocab4() {
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Grapes</Col>
-  <Col className="borderedCol">Grêips</Col>
+  <Col className="borderedCol">Gruêips</Col>
   <Col className="borderedCol">Uvas</Col>
 </Row>
 <Row className="borderedRow1">
@@ -93,12 +93,12 @@ export default function Vocab4() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Mango</Col>
-  <Col className="borderedCol">Mángô</Col>
+  <Col className="borderedCol">Mengô</Col>
   <Col className="borderedCol">Manga</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Melons</Col>
-  <Col className="borderedCol">Melôuns</Col>
+  <Col className="borderedCol">Melâns</Col>
   <Col className="borderedCol">Melões</Col>
 </Row>
 <Row className="borderedRow1">
@@ -113,22 +113,22 @@ export default function Vocab4() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Passion Fruit</Col>
-  <Col className="borderedCol">Páshun Frút</Col>
+  <Col className="borderedCol">Péxian Frút</Col>
   <Col className="borderedCol">Maracujá</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Peach</Col>
-  <Col className="borderedCol">Pích</Col>
+  <Col className="borderedCol">Pítch</Col>
   <Col className="borderedCol">Pêssego</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Pear</Col>
-  <Col className="borderedCol">Pêr</Col>
+  <Col className="borderedCol">Pér</Col>
   <Col className="borderedCol">Pera</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Pineapple</Col>
-  <Col className="borderedCol">Páinápâl</Col>
+  <Col className="borderedCol">Páinépou</Col>
   <Col className="borderedCol">Abacaxi</Col>
 </Row>
 <Row className="borderedRow1">
@@ -143,12 +143,12 @@ export default function Vocab4() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Raisins</Col>
-  <Col className="borderedCol">Réisîn</Col>
+  <Col className="borderedCol">Réizîns</Col>
   <Col className="borderedCol">Uvas Passas</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Raspberry</Col>
-  <Col className="borderedCol">Rásbêri</Col>
+  <Col className="borderedCol">Ruásbêrui</Col>
   <Col className="borderedCol">Framboesa</Col>
 </Row>
 <Row className="borderedRow1">
@@ -158,52 +158,52 @@ export default function Vocab4() {
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Strawberry</Col>
-  <Col className="borderedCol">Stróbêri</Col>
+  <Col className="borderedCol">Stróbêrui</Col>
   <Col className="borderedCol">Morango</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Watermelon</Col>
-  <Col className="borderedCol">Wótermêlôn</Col>
+  <Col className="borderedCol">Wótermêlôn/uárêrmélon</Col>
   <Col className="borderedCol">Melancia</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Apricot</Col>
-  <Col className="borderedCol">Ápricot</Col>
+  <Col className="borderedCol">Ápruicá</Col>
   <Col className="borderedCol">Damasco</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Blueberry</Col>
-  <Col className="borderedCol">Blúbêri</Col>
+  <Col className="borderedCol">Blúbêrui</Col>
   <Col className="borderedCol">Mirtilo</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Cantaloupe</Col>
-  <Col className="borderedCol">Kántâlôup</Col>
+  <Col className="borderedCol">Kentâlôup</Col>
   <Col className="borderedCol">Melão</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Clementine</Col>
-  <Col className="borderedCol">Clémêntin</Col>
+  <Col className="borderedCol">Clémêntáin</Col>
   <Col className="borderedCol">Tangerina</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Cranberry</Col>
-  <Col className="borderedCol">Cránbêri</Col>
+  <Col className="borderedCol">Cruenbérui</Col>
   <Col className="borderedCol">Airela/Oxicoco</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Date</Col>
-  <Col className="borderedCol">Déit</Col>
+  <Col className="borderedCol">Dêit</Col>
   <Col className="borderedCol">Tâmara</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Elderberry</Col>
-  <Col className="borderedCol">Éldêrberi</Col>
+  <Col className="borderedCol">ÉldêrbÉrUi</Col>
   <Col className="borderedCol">Sabugueiro</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Gooseberry</Col>
-  <Col className="borderedCol">Gúzberi</Col>
+  <Col className="borderedCol">Gúzbérui</Col>
   <Col className="borderedCol">Groselha</Col>
 </Row>
 <Row className="borderedRow">
@@ -213,13 +213,13 @@ export default function Vocab4() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Lychee</Col>
-  <Col className="borderedCol">Líchí</Col>
+  <Col className="borderedCol">Láíchí</Col>
   <Col className="borderedCol">Lichia</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Mulberry</Col>
-  <Col className="borderedCol">Múlberi</Col>
-  <Col className="borderedCol">Amora</Col>
+  <Col className="borderedCol">Mólberui</Col>
+  <Col className="borderedCol">Amoreira</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Nectarine</Col>
@@ -233,7 +233,7 @@ export default function Vocab4() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Pomegranate</Col>
-  <Col className="borderedCol">Pômêgrênêt</Col>
+  <Col className="borderedCol">Pômêgruênêt</Col>
   <Col className="borderedCol">Romã</Col>
 </Row>
 <Row className="borderedRow">
@@ -241,13 +241,6 @@ export default function Vocab4() {
   <Col className="borderedCol">Stárfrút</Col>
   <Col className="borderedCol">Carambola</Col>
 </Row>
-<Row className="borderedRow1">
-  <Col className="borderedCol">Tangerine</Col>
-  <Col className="borderedCol">Tángêrín</Col>
-  <Col className="borderedCol">Tangerina</Col>
-</Row>
-
-
 
     </Container>
 

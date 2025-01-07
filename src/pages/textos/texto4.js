@@ -32,7 +32,7 @@ export default function Texto4() {
         <p>Relieved and still in awe of what they had just witnessed, the group thanked the man for his bravery. After the excitement died down, they finally settled back into their tents, feeling safe once again. Despite the terrifying encounter, they all fell asleep, knowing it had been a camping trip they would never forget.</p>
       </h4>
     </Col>
-    <Col className="extra-pagina-de-textos d-flex flex-column align-items-end">
+    <Col xs={12} md={3} className="extra-pagina-de-textos d-flex flex-column align-items-end">
     <RightNavBar />
     </Col>
   </Row>

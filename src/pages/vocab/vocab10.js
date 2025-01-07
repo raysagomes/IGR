@@ -29,17 +29,17 @@ export default function Vocab10() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Bottle</Col>
-  <Col className="borderedCol">Bótâl</Col>
+  <Col className="borderedCol">Bórou</Col>
   <Col className="borderedCol">Garrafa</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Bottle Cap</Col>
-  <Col className="borderedCol">Bótâl Káp</Col>
+  <Col className="borderedCol">Bórou Kép</Col>
   <Col className="borderedCol">Tampa de Garrafa</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Bottle Opener</Col>
-  <Col className="borderedCol">Bótâl Óupênêr</Col>
+  <Col className="borderedCol">Bórou Óupênêr</Col>
   <Col className="borderedCol">Abridor de Garrafas</Col>
 </Row>
 <Row className="borderedRow">
@@ -47,14 +47,9 @@ export default function Vocab10() {
   <Col className="borderedCol">Bôul</Col>
   <Col className="borderedCol">Tigela</Col>
 </Row>
-<Row className="borderedRow1">
-  <Col className="borderedCol">Cork</Col>
-  <Col className="borderedCol">Kôrk</Col>
-  <Col className="borderedCol">Cortiça</Col>
-</Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Corkscrew</Col>
-  <Col className="borderedCol">Kôrkskrú</Col>
+  <Col className="borderedCol">Kôrk-iskrú</Col>
   <Col className="borderedCol">Saca-Rolhas</Col>
 </Row>
 <Row className="borderedRow1">
@@ -64,7 +59,7 @@ export default function Vocab10() {
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Eating Utensils</Col>
-  <Col className="borderedCol">Íting Yutênsîls</Col>
+  <Col className="borderedCol">Ítin Yutênsîls</Col>
   <Col className="borderedCol">Utensílios de Cozinha</Col>
 </Row>
 <Row className="borderedRow1">
@@ -74,7 +69,7 @@ export default function Vocab10() {
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Grater</Col>
-  <Col className="borderedCol">Grêitêr</Col>
+  <Col className="borderedCol">Gruêirêr</Col>
   <Col className="borderedCol">Ralador</Col>
 </Row>
 <Row className="borderedRow1">
@@ -84,7 +79,7 @@ export default function Vocab10() {
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Ladle</Col>
-  <Col className="borderedCol">Lêidl</Col>
+  <Col className="borderedCol">Lêidou</Col>
   <Col className="borderedCol">Concha</Col>
 </Row>
 <Row className="borderedRow1">
@@ -94,7 +89,7 @@ export default function Vocab10() {
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Napkin</Col>
-  <Col className="borderedCol">Nápkîn</Col>
+  <Col className="borderedCol">Népkîn</Col>
   <Col className="borderedCol">Guardanapo</Col>
 </Row>
 <Row className="borderedRow1">
@@ -109,7 +104,7 @@ export default function Vocab10() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Plate</Col>
-  <Col className="borderedCol">Plêt</Col>
+  <Col className="borderedCol">Plêit</Col>
   <Col className="borderedCol">Prato</Col>
 </Row>
 <Row className="borderedRow">
@@ -119,7 +114,7 @@ export default function Vocab10() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Pan</Col>
-  <Col className="borderedCol">Pæn</Col>
+  <Col className="borderedCol">Pen</Col>
   <Col className="borderedCol">Frigideira</Col>
 </Row>
 <Row className="borderedRow">
@@ -129,12 +124,12 @@ export default function Vocab10() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Salt Shaker</Col>
-  <Col className="borderedCol">Sôlt Shêikêr</Col>
+  <Col className="borderedCol">Sóut Shêikêr</Col>
   <Col className="borderedCol">Saleiro</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Saucer</Col>
-  <Col className="borderedCol">Sósêr</Col>
+  <Col className="borderedCol">Sóssêr</Col>
   <Col className="borderedCol">Pires</Col>
 </Row>
 <Row className="borderedRow1">
@@ -144,22 +139,22 @@ export default function Vocab10() {
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Straw</Col>
-  <Col className="borderedCol">Stró</Col>
+  <Col className="borderedCol">Stróu</Col>
   <Col className="borderedCol">Canudo</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Table</Col>
-  <Col className="borderedCol">Téibl</Col>
+  <Col className="borderedCol">Teibou</Col>
   <Col className="borderedCol">Mesa</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Table Cloth</Col>
-  <Col className="borderedCol">Téibl Klôth</Col>
+  <Col className="borderedCol">Teibou Klóth</Col>
   <Col className="borderedCol">Toalha de Mesa</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Teapot</Col>
-  <Col className="borderedCol">Típôt</Col>
+  <Col className="borderedCol">Típót</Col>
   <Col className="borderedCol">Bule</Col>
 </Row>
 <Row className="borderedRow">
@@ -169,7 +164,7 @@ export default function Vocab10() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Wine Glass</Col>
-  <Col className="borderedCol">Wáin Gláss</Col>
+  <Col className="borderedCol">Wáini Gléss</Col>
   <Col className="borderedCol">Taça</Col>
 </Row>
 

@@ -29,7 +29,7 @@ export default function Vocab7() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Attic</Col>
-  <Col className="borderedCol">Átic</Col>
+  <Col className="borderedCol">Áric</Col>
   <Col className="borderedCol">Sótão</Col>
 </Row>
 <Row className="borderedRow">
@@ -39,12 +39,12 @@ export default function Vocab7() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Basement</Col>
-  <Col className="borderedCol">Béisment</Col>
+  <Col className="borderedCol">Béiziment</Col>
   <Col className="borderedCol">Porão</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Bathroom</Col>
-  <Col className="borderedCol">Báthrûm</Col>
+  <Col className="borderedCol">Béthrûm</Col>
   <Col className="borderedCol">Banheiro</Col>
 </Row>
 <Row className="borderedRow1">
@@ -59,22 +59,22 @@ export default function Vocab7() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Dining Room</Col>
-  <Col className="borderedCol">Dáining Rúm</Col>
+  <Col className="borderedCol">Dáinin Rúm</Col>
   <Col className="borderedCol">Sala de Jantar</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Entryway</Col>
-  <Col className="borderedCol">Éntrîwé</Col>
+  <Col className="borderedCol">Éntrîwéi</Col>
   <Col className="borderedCol">Entrada</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Family Room</Col>
-  <Col className="borderedCol">Fámîli Rúm</Col>
+  <Col className="borderedCol">Femîli Rúm</Col>
   <Col className="borderedCol">Sala de Família</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Garage</Col>
-  <Col className="borderedCol">Gáráj</Col>
+  <Col className="borderedCol">Gáruáj</Col>
   <Col className="borderedCol">Garagem</Col>
 </Row>
 <Row className="borderedRow1">
@@ -84,7 +84,7 @@ export default function Vocab7() {
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Hallway</Col>
-  <Col className="borderedCol">Hólwé</Col>
+  <Col className="borderedCol">Hóu-uêi</Col>
   <Col className="borderedCol">Corredor</Col>
 </Row>
 <Row className="borderedRow1">
@@ -94,7 +94,7 @@ export default function Vocab7() {
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Laundry Room</Col>
-  <Col className="borderedCol">Láundri Rúm</Col>
+  <Col className="borderedCol">Londrui Rúm</Col>
   <Col className="borderedCol">Lavanderia</Col>
 </Row>
 <Row className="borderedRow1">
@@ -109,17 +109,17 @@ export default function Vocab7() {
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Pantry</Col>
-  <Col className="borderedCol">Pántrî</Col>
+  <Col className="borderedCol">Pêntruî</Col>
   <Col className="borderedCol">Despensa</Col>
 </Row>
 <Row className="borderedRow">
   <Col className="borderedCol">Patio</Col>
-  <Col className="borderedCol">Pátîô</Col>
+  <Col className="borderedCol">Pédîô</Col>
   <Col className="borderedCol">Pátio</Col>
 </Row>
 <Row className="borderedRow1">
   <Col className="borderedCol">Study</Col>
-  <Col className="borderedCol">Stâdi</Col>
+  <Col className="borderedCol">Istâdi</Col>
   <Col className="borderedCol">Sala de Estudo</Col>
 </Row>
 <Row className="borderedRow">
