@@ -1,27 +1,104 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Header from '../../components/header';
 import HeaderMenuTexto from '../../components/header-menu-texto';
 import Footer from "../../components/footer";
 import Logo from "../../components/logo";
 import RightNavBar from "../../components/right-navbar";
-import { Container, Col, Row, Accordion} from "react-bootstrap";
+import { Container, Col, Row, Accordion } from "react-bootstrap";
 import { Helmet } from 'react-helmet-async';
+import TextoAudio from "../../components/texto-audio";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay, faPause, faStop } from '@fortawesome/free-solid-svg-icons';
+
+
+
+const AudioComponent = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [selectedVoice, setSelectedVoice] = useState(null);
+  const [rate, setRate] = useState(1); 
+
+  const text = "Luciana's dog, Max. Luciana has a lovable dog named Max, who is a mixed breed with a lot of personality. Max has a shiny black coat with patches of white on his chest and paws. He’s about three years old and has boundless energy. Every morning, Luciana takes Max to the local park where he loves to chase after his favorite red ball. Max is very friendly and enjoys meeting new people and other dogs. He has a playful habit of running in circles when he gets excited, which always makes Luciana laugh. At home, Max is a loyal companion. He follows Luciana from room to room and always lies at her feet while she reads or works. He’s especially fond of snuggling on the couch in the evenings. Max has a few tricks up his sleeve; he can sit, stay, and even do a little dance on his hind legs. Luciana makes sure Max gets plenty of exercise and loves to take him on long walks through the neighborhood. Despite his energetic nature, Max is also a calm and gentle dog who is very good with children. Luciana often shares stories about Max's antics with her friends, and everyone who meets him is charmed by his friendly demeanor and playful spirit. Max truly brings joy and companionship to Luciana's life.";
+
+  useEffect(() => {
+    const loadVoices = () => {
+      const availableVoices = window.speechSynthesis.getVoices();
+      console.log("Available voices:");
+      availableVoices.forEach(voice => {
+        console.log(`${voice.name} (${voice.lang})`);
+      });
+
+      const specificVoice = availableVoices.find(voice => voice.name === "Microsoft Jenny Online (Natural) - English (United States)");
+      if (specificVoice) {
+        setSelectedVoice(specificVoice);
+      } else {
+        console.warn("Microsoft Ana voice not found. Using the first available voice.");
+        setSelectedVoice(availableVoices[0]);
+      }
+    };
+
+    window.speechSynthesis.onvoiceschanged = loadVoices;
+    loadVoices();
+  }, []);
+
+  const startAudio = () => {
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.voice = selectedVoice; 
+    utterance.rate = rate; 
+    window.speechSynthesis.speak(utterance);
+    setIsPlaying(true);
+  };
+
+  const stopAudio = () => {
+    window.speechSynthesis.cancel(); 
+    setIsPlaying(false); 
+  };
+
+  return (
+    <div>
+    <TextoAudio />
+     
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <button onClick={isPlaying ? stopAudio : startAudio}>
+        <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} /> 
+        </button>
+        <button onClick={stopAudio}>
+        <FontAwesomeIcon icon={faStop} /> 
+        </button>
+        <input
+          id="rate"
+          type="range"
+          min="0.1"
+          max="10"
+          step="0.1"
+          value={rate}
+          onChange={(e) => setRate(parseFloat(e.target.value))}
+          style={{ margin: '0 10px' }} 
+        />
+      
+      </div>
+      <div>
+        <label htmlFor="rate">Rate: {rate.toFixed(1)}</label>
+      </div>
+    </div>
+  );
+};
 
 
 export default function Texto1() {
-    return(
-<>
-<Helmet>
+  return (
+    <>
+      <Helmet>
         <title>Texto 1</title>
       </Helmet>
-<Header />
-<Logo />
-<HeaderMenuTexto />
+      <Header />
+      <Logo />
+      <HeaderMenuTexto />
 
-<Container>
-      <Row>
-        <Col className="coluna-texto1">
-        <h2 className="h1-Texto-Inicial"> Luciana's dog, Max </h2> 
+      <Container>
+        <Row>
+          <Col className="coluna-texto1">
+            <AudioComponent /> 
+            <h2 className="h1-Texto-Inicial"> Luciana's dog, Max </h2> 
         <h4 className="h5-Textos">
       <p> Luciana has a lovable dog named Max, who is a mixed breed with a lot of personality. Max has a shiny black coat with patches of white on his chest and paws. He’s about three years old and has boundless energy. Every morning, Luciana takes Max to the local park where he loves to chase after his favorite red ball. Max is very friendly and enjoys meeting new people and other dogs. He has a playful habit of running in circles when he gets excited, which always makes Luciana laugh.</p>
      <p>At home, Max is a loyal companion. He follows Luciana from room to room and always lies at her feet while she reads or works. He’s especially fond of snuggling on the couch in the evenings. Max has a few tricks up his sleeve; he can sit, stay, and even do a little dance on his hind legs. Luciana makes sure Max gets plenty of exercise and loves to take him on long walks through the neighborhood. Despite his energetic nature, Max is also a calm and gentle dog who is very good with children.

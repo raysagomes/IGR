@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Header from '../../components/header';
 import HeaderMenuTexto from '../../components/header-menu-texto';
 import Footer from "../../components/footer";
@@ -6,7 +6,81 @@ import Logo from "../../components/logo";
 import RightNavBar from "../../components/right-navbar";
 import { Container, Col, Row, Accordion} from "react-bootstrap";
 import { Helmet } from 'react-helmet-async';
+import TextoAudio from "../../components/texto-audio";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay, faPause, faStop } from '@fortawesome/free-solid-svg-icons';
 
+
+const AudioComponent = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [selectedVoice, setSelectedVoice] = useState(null);
+  const [rate, setRate] = useState(1); 
+
+  const text = "A Carnival Adventure. Sophie had been looking forward to the carnival all week. She imagined thrilling rides and exciting games. When she got there, her first stop was the Ferris wheel, but it wasn’t moving. Instead, the operator was stuck at the top, waving frantically for help. The crowd below couldn’t stop laughing, and Sophie joined in, snapping a picture of the funny yet unusual sight. Next, Sophie tried her luck at the ring toss. She threw a ring so wildly that it landed on the head of a stuffed bear sitting on the prize shelf. The vendor awarded her the bear, saying: That’s a first! Sophie laughed at her accidental win and hugged the bear tightly, proud of her unique skills. By the end of the day, Sophie realized the carnival wasn’t just about thrills—it was about the unexpected, hilarious moments that made her experience unforgettable. She left with a stuffed bear, sore cheeks from laughing, and a story to share with her friends.";
+
+  useEffect(() => {
+    const loadVoices = () => {
+      const availableVoices = window.speechSynthesis.getVoices();
+      console.log("Available voices:");
+      availableVoices.forEach(voice => {
+        console.log(`${voice.name} (${voice.lang})`);
+      });
+
+      const specificVoice = availableVoices.find(voice => voice.name === "Microsoft Jenny Online (Natural) - English (United States)");
+      if (specificVoice) {
+        setSelectedVoice(specificVoice);
+      } else {
+        console.warn("Microsoft Ana voice not found. Using the first available voice.");
+        setSelectedVoice(availableVoices[0]);
+      }
+    };
+
+    window.speechSynthesis.onvoiceschanged = loadVoices;
+    loadVoices();
+  }, []);
+
+  const startAudio = () => {
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.voice = selectedVoice; 
+    utterance.rate = rate; 
+    window.speechSynthesis.speak(utterance);
+    setIsPlaying(true);
+  };
+
+  const stopAudio = () => {
+    window.speechSynthesis.cancel(); 
+    setIsPlaying(false); 
+  };
+
+  return (
+    <div>
+    <TextoAudio />
+     
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <button onClick={isPlaying ? stopAudio : startAudio}>
+        <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} /> 
+        </button>
+        <button onClick={stopAudio}>
+        <FontAwesomeIcon icon={faStop} /> 
+        </button>
+        <input
+          id="rate"
+          type="range"
+          min="0.1"
+          max="10"
+          step="0.1"
+          value={rate}
+          onChange={(e) => setRate(parseFloat(e.target.value))}
+          style={{ margin: '0 10px' }} 
+        />
+      
+      </div>
+      <div>
+        <label htmlFor="rate">Rate: {rate.toFixed(1)}</label>
+      </div>
+    </div>
+  );
+};
 
 export default function Texto8() {
     return(
@@ -21,6 +95,8 @@ export default function Texto8() {
 <Container>
   <Row>
     <Col className="coluna-texto1">
+    <AudioComponent /> 
+
       <h2 className="h1-Texto-Inicial">A Carnival Adventure</h2>
       <h4 className="h5-Textos">
   <p>Sophie had been looking forward to the carnival all week. She imagined thrilling rides and exciting games. When she got there, her first stop was the Ferris wheel, but it wasn’t moving. Instead, the operator was stuck at the top, waving frantically for help. The crowd below couldn’t stop laughing, and Sophie joined in, snapping a picture of the funny yet unusual sight.</p>

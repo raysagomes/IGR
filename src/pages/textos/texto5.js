@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Header from '../../components/header';
 import HeaderMenuTexto from '../../components/header-menu-texto';
 import Footer from "../../components/footer";
@@ -6,6 +6,81 @@ import Logo from "../../components/logo";
 import RightNavBar from "../../components/right-navbar";
 import { Container, Col, Row, Accordion} from "react-bootstrap";
 import { Helmet } from 'react-helmet-async';
+import TextoAudio from "../../components/texto-audio";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay, faPause, faStop } from '@fortawesome/free-solid-svg-icons';
+
+
+const AudioComponent = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [selectedVoice, setSelectedVoice] = useState(null);
+  const [rate, setRate] = useState(1); 
+
+  const text = "A Rainy Day at Home. On a rainy afternoon, Thay was at home, enjoying the perfect weather to stay cozy in her room. She loved these days when the sound of rain made her feel peaceful. For Thay, there was nothing better than ordering pizza and watching her favorite movies: *Twilight*, *Harry Potter*, and *Corpse Bride*. She ordered a four-cheese pizza, her favorite, and while waiting for it to arrive, she snuggled in her blanket, getting ready for a movie marathon. When the pizza finally came, Thay was already excited. After eating, she grabbed her chocolate almond ice cream and hid under the blanket to enjoy the movies in total comfort. The afternoon flew by, and Thay felt completely relaxed, with no worries at all. As night fell, she was happy and satisfied, knowing it had been the perfect day";
+
+  useEffect(() => {
+    const loadVoices = () => {
+      const availableVoices = window.speechSynthesis.getVoices();
+      console.log("Available voices:");
+      availableVoices.forEach(voice => {
+        console.log(`${voice.name} (${voice.lang})`);
+      });
+
+      const specificVoice = availableVoices.find(voice => voice.name === "Microsoft Jenny Online (Natural) - English (United States)");
+      if (specificVoice) {
+        setSelectedVoice(specificVoice);
+      } else {
+        console.warn("Microsoft Ana voice not found. Using the first available voice.");
+        setSelectedVoice(availableVoices[0]);
+      }
+    };
+
+    window.speechSynthesis.onvoiceschanged = loadVoices;
+    loadVoices();
+  }, []);
+
+  const startAudio = () => {
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.voice = selectedVoice; 
+    utterance.rate = rate; 
+    window.speechSynthesis.speak(utterance);
+    setIsPlaying(true);
+  };
+
+  const stopAudio = () => {
+    window.speechSynthesis.cancel(); 
+    setIsPlaying(false); 
+  };
+
+  return (
+    <div>
+    <TextoAudio />
+     
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <button onClick={isPlaying ? stopAudio : startAudio}>
+        <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} /> 
+        </button>
+        <button onClick={stopAudio}>
+        <FontAwesomeIcon icon={faStop} /> 
+        </button>
+        <input
+          id="rate"
+          type="range"
+          min="0.1"
+          max="10"
+          step="0.1"
+          value={rate}
+          onChange={(e) => setRate(parseFloat(e.target.value))}
+          style={{ margin: '0 10px' }} 
+        />
+      
+      </div>
+      <div>
+        <label htmlFor="rate">Rate: {rate.toFixed(1)}</label>
+      </div>
+    </div>
+  );
+};
 
 
 export default function Texto5() {
@@ -20,6 +95,8 @@ export default function Texto5() {
 <Container>
   <Row>
     <Col className="coluna-texto1">
+    <AudioComponent /> 
+
       <h2 className="h1-Texto-Inicial">A Rainy Day at Home</h2>
       <h4 className="h5-Textos">
         <p>On a rainy afternoon, Thay was at home, enjoying the perfect weather to stay cozy in her room. She loved these days when the sound of rain made her feel peaceful. For Thay, there was nothing better than ordering pizza and watching her favorite movies: *Twilight*, *Harry Potter*, and *Corpse Bride*.</p>

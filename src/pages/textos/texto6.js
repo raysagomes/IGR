@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Header from '../../components/header';
 import HeaderMenuTexto from '../../components/header-menu-texto';
 import Footer from "../../components/footer";
@@ -6,6 +6,82 @@ import Logo from "../../components/logo";
 import RightNavBar from "../../components/right-navbar";
 import { Container, Col, Row, Accordion} from "react-bootstrap";
 import { Helmet } from 'react-helmet-async';
+import TextoAudio from "../../components/texto-audio";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay, faPause, faStop } from '@fortawesome/free-solid-svg-icons';
+
+
+
+const AudioComponent = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [selectedVoice, setSelectedVoice] = useState(null);
+  const [rate, setRate] = useState(1); 
+
+  const text = "A Visit to the Zoo. Silvie was excited to visit the zoo, expecting to see majestic lions roaming freely. However, when she arrived at the lion's den, she was disappointed to find a group of lethargic, plump lions who barely moved. They seemed more interested in taking a nap than showcasing their grandeur. Silvie couldn’t help but laugh at how different they were from the fierce, powerful lions she had imagined. Next, she went to see the monkeys, expecting to witness them swinging energetically from branch to branch. Instead, she found a bunch of monkeys that looked like they were wearing costumes. They moved slowly, with none of the playful energy Silvie had hoped for. It felt like a scene from a comedy, and Silvie couldn’t stop giggling at how peculiar they looked. Even though the animals were not as exciting as Silvie had anticipated, she still enjoyed her time at the zoo, laughing at the unexpected sight of the sleepy lions and the comical monkeys. It was a day full of surprises, and Silvie left the zoo with a big smile on her face, grateful for the experience.";
+
+  useEffect(() => {
+    const loadVoices = () => {
+      const availableVoices = window.speechSynthesis.getVoices();
+      console.log("Available voices:");
+      availableVoices.forEach(voice => {
+        console.log(`${voice.name} (${voice.lang})`);
+      });
+
+      const specificVoice = availableVoices.find(voice => voice.name === "Microsoft Jenny Online (Natural) - English (United States)");
+      if (specificVoice) {
+        setSelectedVoice(specificVoice);
+      } else {
+        console.warn("Microsoft Ana voice not found. Using the first available voice.");
+        setSelectedVoice(availableVoices[0]);
+      }
+    };
+
+    window.speechSynthesis.onvoiceschanged = loadVoices;
+    loadVoices();
+  }, []);
+
+  const startAudio = () => {
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.voice = selectedVoice; 
+    utterance.rate = rate; 
+    window.speechSynthesis.speak(utterance);
+    setIsPlaying(true);
+  };
+
+  const stopAudio = () => {
+    window.speechSynthesis.cancel(); 
+    setIsPlaying(false); 
+  };
+
+  return (
+    <div>
+    <TextoAudio />
+     
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <button onClick={isPlaying ? stopAudio : startAudio}>
+        <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} /> 
+        </button>
+        <button onClick={stopAudio}>
+        <FontAwesomeIcon icon={faStop} /> 
+        </button>
+        <input
+          id="rate"
+          type="range"
+          min="0.1"
+          max="10"
+          step="0.1"
+          value={rate}
+          onChange={(e) => setRate(parseFloat(e.target.value))}
+          style={{ margin: '0 10px' }} 
+        />
+      
+      </div>
+      <div>
+        <label htmlFor="rate">Rate: {rate.toFixed(1)}</label>
+      </div>
+    </div>
+  );
+};
 
 
 export default function Texto6() {
@@ -21,6 +97,8 @@ export default function Texto6() {
 <Container>
   <Row>
     <Col className="coluna-texto1">
+    <AudioComponent /> 
+
       <h2 className="h1-Texto-Inicial">A Visit to the Zoo</h2>
       <h4 className="h5-Textos">
         <p>Silvie was excited to visit the zoo, expecting to see majestic lions roaming freely. However, when she arrived at the lion's den, she was disappointed to find a group of lethargic, plump lions who barely moved. They seemed more interested in taking a nap than showcasing their grandeur. Silvie couldn’t help but laugh at how different they were from the fierce, powerful lions she had imagined.</p>
