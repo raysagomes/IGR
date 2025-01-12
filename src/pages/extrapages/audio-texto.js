@@ -32,6 +32,9 @@ export default function AudioTexto() {
 
     </h4>
 </Col>
+  <Col xs={12} md={3} className="extra-pagina-de-textos d-flex flex-column align-items-end">
+            <RightNavBar />
+          </Col>
       </Row>
     </Container>
 <ListaAudioTexto />
