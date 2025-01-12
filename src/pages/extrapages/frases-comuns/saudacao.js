@@ -22,31 +22,44 @@ export default function Saudacoes() {
 <Container>
       <Row>
         <Col className="coluna-texto1">
-        <h2 className="h1-Texto-Inicial"> Frases Comuns</h2> 
+        <h2 className="h1-Texto-Inicial"> Frases para Saudações</h2> 
         <h4 className="h5-Textos">
-      <p> Nesta página, você encontrará uma variedade de frases úteis em inglês, organizadas por categorias como saudações, perguntas, expressões de cortesia e muito mais. Elas foram selecionadas para ajudar em diferentes situações do dia a dia e tornar sua comunicação mais prática e natural. Explore as categorias e descubra as frases que melhor atendem às suas necessidades!</p>    
+      <p>  Aprenda frases de saudação de forma educada e natural.</p>    
 
     </h4>
 </Col>
+<Col xs={12} md={3} className="extra-pagina-de-textos d-flex flex-column align-items-end margin-20-fim">
+    <RightNavBar />
+    </Col>
       </Row>
     </Container>
 
-    
-        <Container md="auto" xs lg="7" className="div-accordion-ativididade justify-content-center"> 
-            <Row> 
-         <Col>        
-         <Card className="Card-extras">
-      <Card.Body>
-        <Card.Title>Frases de Agradecimento</Card.Title>
-        <Card.Text>
-        Formas simples e educadas de expressar gratidão em inglês, adequadas para diversas ocasiões.        </Card.Text>
-      </Card.Body>
-    </Card>
-        </Col>
-        </Row>
-        </Container>
+        
+<Container>
+      <Row>
+        <Col className="coluna-texto1">
+        <h4 className="h5-Textos">
+        <br />
 
+     <h4 className="frases-comuns-h3"> <p> <strong> Informal: </strong> </p> </h4>
+ <br />
+ <p>"Hi!" <strong><i>(Oi!)</i></strong></p>
+  <p>"Hello!" <strong><i>(Olá!)</i></strong></p> 
+  <p>"Hey there!" <strong><i>(E aí!)</i></strong></p>
+   <p>"What’s up?" <strong><i>(Tudo bem?)</i></strong></p>
+    <p>"How’s it going?" <strong><i>(Como vai?)</i></strong></p> 
+    <p>"Good to see you!" <strong><i>(Bom te ver!)</i></strong></p>
+     <p>"Hey, how are things?" <strong><i>(Oi, como estão as coisas?)</i></strong></p>
+      <p>"Yo!" <strong><i>(E aí!)</i></strong></p> <br />
 
+     <h3 className="frases-comuns-h3"> <p> <strong> Formal: </strong> </p> </h3>
+     <br />
+     <p>"Good morning!" <strong><i>(Bom dia!)</i></strong></p> <p>"Good afternoon!" <strong><i>(Boa tarde!)</i></strong></p> <p>"Good evening!" <strong><i>(Boa noite!)</i></strong></p> <p>"It’s a pleasure to meet you." <strong><i>(É um prazer conhecê-lo.)</i></strong></p> <p>"How do you do?" <strong><i>(Como vai?)</i></strong></p> <p>"I hope you’re doing well." <strong><i>(Espero que você esteja bem.)</i></strong></p> <p>"Nice to meet you." <strong><i>(Prazer em conhecê-lo.)</i></strong></p> <p>"I’m pleased to see you." <strong><i>(Fico feliz em vê-lo.)</i></strong></p>
+     
+     </h4>
+</Col>
+      </Row>
+    </Container>
         
 <Footer />
 </div>

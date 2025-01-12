@@ -1,7 +1,7 @@
 import Header from '../components/header'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Logo from '../components/logo';
-import HeaderMenuVocabulario from '../components/header-menu-vocabulario';
+import HeaderMenuTexto from '../components/header-menu-texto'
 import Footer from '../components/footer';
 import TextoInicial from '../components/texto-inicial';
 import ListaVocabulario from '../components/list-vocab';
@@ -17,7 +17,7 @@ function Vocabulário() {
       </Helmet>
    <Header />
    <Logo />
-   <HeaderMenuVocabulario />
+   <HeaderMenuTexto />
    <ListaVocabulario />
    <Footer />
    </div>

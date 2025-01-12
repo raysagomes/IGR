@@ -72,7 +72,7 @@ export default function FrasesComuns() {
         <Container className="div-extras justify-content-center align-items-center flex-column mb-4"> 
             <Row> 
          <Col>        
-         <Link to="agradecimentos" className="text-decoration-none texto-link">
+         <Link to="despedidas" className="text-decoration-none texto-link">
 
          <Card className="Card-extras">
       <Card.Body>
@@ -92,7 +92,7 @@ export default function FrasesComuns() {
         <Container className="div-extras justify-content-center align-items-center flex-column mb-4"> 
             <Row> 
          <Col>      
-         <Link to="agradecimentos" className="text-decoration-none texto-link">
+         <Link to="saude" className="text-decoration-none texto-link">
   
          <Card className="Card-extras">
       <Card.Body>
@@ -112,7 +112,7 @@ export default function FrasesComuns() {
         <Container className="div-extras justify-content-center align-items-center flex-column mb-4"> 
             <Row> 
          <Col>       
-         <Link to="agradecimentos" className="text-decoration-none texto-link">
+         <Link to="ajuda" className="text-decoration-none texto-link">
  
          <Card className="Card-extras">
       <Card.Body>
@@ -131,8 +131,8 @@ export default function FrasesComuns() {
 
         <Container className="div-extras justify-content-center align-items-center flex-column mb-4"> 
             <Row> 
-         <Col>      
-         <Link to="agradecimentos" className="text-decoration-none texto-link">
+         <Col>
+         <Link to="desculpa" className="text-decoration-none texto-link">
   
          <Card className="Card-extras">
       <Card.Body>
@@ -152,7 +152,7 @@ export default function FrasesComuns() {
         <Container className="div-extras justify-content-center align-items-center flex-column mb-4"> 
             <Row> 
          <Col>        
-         <Link to="agradecimentos" className="text-decoration-none texto-link">
+         <Link to="informacao" className="text-decoration-none texto-link">
 
          <Card className="Card-extras">
       <Card.Body>
@@ -171,7 +171,7 @@ export default function FrasesComuns() {
         <Container className="div-extras justify-content-center align-items-center flex-column mb-4"> 
             <Row> 
          <Col>     
-         <Link to="agradecimentos" className="text-decoration-none texto-link">
+         <Link to="saudacao" className="text-decoration-none texto-link">
    
          <Card className="Card-extras">
       <Card.Body>
