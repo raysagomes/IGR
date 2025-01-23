@@ -12,16 +12,21 @@ const AudioPlayer = ({ text, voiceName }) => {
   useEffect(() => {
     const loadVoices = () => {
       const voices = window.speechSynthesis.getVoices();
-      console.log("Available voices:", voices); 
-      setAvailableVoices(voices);
-      const specificVoice = voices.find(voice => voice.name === voiceName);
-      if (specificVoice) {
-        setSelectedVoice(specificVoice);
+      if (voices.length) {
+        console.log("Available voices:", voices);
+        setAvailableVoices(voices);
+        const specificVoice = voices.find(voice => voice.name === voiceName);
+        if (specificVoice) {
+          setSelectedVoice(specificVoice);
+        } else {
+          console.warn(`${voiceName} voice not found. Using fallback voice.`);
+          setSelectedVoice(voices[0]); // Usar a primeira voz disponível como fallback
+        }
+        setLoading(false);
       } else {
-        console.warn(`${voiceName} voice not found. Using fallback voice.`);
-        setSelectedVoice(voices[104]); 
+        console.warn("No voices available. Retrying...");
+        setTimeout(loadVoices, 100); // Tentar novamente após 100ms
       }
-      setLoading(false);
     };
 
     loadVoices();
@@ -33,9 +38,9 @@ const AudioPlayer = ({ text, voiceName }) => {
   }, [voiceName]);
 
   const startAudio = () => {
-    console.log("Starting audio with voice:", selectedVoice); 
+    console.log("Starting audio with voice:", selectedVoice);
     if (!selectedVoice) {
-      console.warn("No voice selected!"); 
+      console.warn("No voice selected!");
       return;
     }
     const utterance = new SpeechSynthesisUtterance(text);
@@ -79,8 +84,9 @@ const AudioPlayer = ({ text, voiceName }) => {
         </button>
       </div>
       <div>
-        <label style={{ fontSize: '0.8rem' }}>Rate: {rate.toFixed(1)}</label> </div>
-      {loading && <div style={{ fontSize: '0.8rem', color: 'gray' }}>Loading voices...</div>} 
+        <label style={{ fontSize: '0.8rem' }}>Rate: {rate.toFixed(1)}</label>
+      </div>
+      {loading && <div style={{ fontSize: '0.8rem', color: 'gray' }}>Loading voices...</div>}
     </div>
   );
 };
