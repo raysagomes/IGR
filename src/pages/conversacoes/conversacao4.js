@@ -6,6 +6,7 @@ import HeaderMenuTexto from "../../components/header-menu-texto";
 import Logo from '../../components/logo';
 import { Container, Col, Row, Accordion} from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
+import AudioPlayer from '../../components/audio-player';
 
 
 export default function Conversacao4() {
@@ -27,36 +28,52 @@ export default function Conversacao4() {
       <br /> 
 
       <p><strong>Mike:</strong> Hello, I have a reservation for tonight.</p>  
-      <p><strong>Mike:</strong> Olá, eu tenho uma reserva para hoje à noite.</p>
-      <br /> 
+<p><strong>Mike:</strong> Olá, eu tenho uma reserva para hoje à noite.</p>
+<AudioPlayer text="Hello, I have a reservation for tonight." voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
 
-      <p><strong>Receptionist:</strong> Welcome! Can I have your name, please?</p>  
-      <p><strong>Recepcionista:</strong> Bem-vindo! Posso pegar seu nome, por favor?</p>
-      <br /> 
+<br />
 
-      <p><strong>Mike:</strong> It’s Mike Miller. The reservation is under my name.</p>  
-      <p><strong>Mike:</strong> É Mike Miller. A reserva está no meu nome.</p>
-      <br /> 
+<p><strong>Receptionist:</strong> Welcome! Can I have your name, please?</p>  
+<p><strong>Recepcionista:</strong> Bem-vindo! Posso pegar seu nome, por favor?</p>
+<AudioPlayer text="Welcome! Can I have your name, please?" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
 
-      <p><strong>Receptionist:</strong> Thank you, Mr. Miller. Here’s your room key. It’s on the third floor.</p>  
-      <p><strong>Recepcionista:</strong> Obrigada, Sr. Miller. Aqui está a chave do seu quarto. Fica no terceiro andar.</p>
-      <br /> 
+<br />
 
-      <p><strong>Mike:</strong> Thank you. Do you have breakfast available?</p>  
-      <p><strong>Mike:</strong> Obrigada. Vocês servem café da manhã?</p>
-      <br /> 
+<p><strong>Mike:</strong> It’s Mike Miller. The reservation is under my name.</p>  
+<p><strong>Mike:</strong> É Mike Miller. A reserva está no meu nome.</p>
+<AudioPlayer text="It’s Mike Miller. The reservation is under my name." voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
 
-      <p><strong>Receptionist:</strong> Yes, we serve breakfast from 7 AM to 10 AM in the dining area.</p>  
-      <p><strong>Recepcionista:</strong> Sim, servimos café da manhã das 7h às 10h na área de refeições.</p>
-      <br /> 
+<br />
 
-      <p><strong>Mike:</strong> Great! I’ll be sure to come by tomorrow.</p>  
-      <p><strong>Mike:</strong> Ótimo! Vou passar por lá amanhã.</p>
-      <br /> 
+<p><strong>Receptionist:</strong> Thank you, Mr. Miller. Here’s your room key. It’s on the third floor.</p>  
+<p><strong>Recepcionista:</strong> Obrigada, Sr. Miller. Aqui está a chave do seu quarto. Fica no terceiro andar.</p>
+<AudioPlayer text="Thank you, Mr. Miller. Here’s your room key. It’s on the third floor." voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
 
-      <p><strong>Receptionist:</strong> Have a pleasant stay, Ms. Miller!</p>  
-      <p><strong>Recepcionista:</strong> Tenha uma estadia agradável, Sra. Miller!</p>
-      <br /> 
+<br />
+
+<p><strong>Mike:</strong> Thank you. Do you have breakfast available?</p>  
+<p><strong>Mike:</strong> Obrigado. Vocês servem café da manhã?</p>
+<AudioPlayer text="Thank you. Do you have breakfast available?" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
+<br />
+
+<p><strong>Receptionist:</strong> Yes, we serve breakfast from 7 AM to 10 AM in the dining area.</p>  
+<p><strong>Recepcionista:</strong> Sim, servimos café da manhã das 7h às 10h na área de refeições.</p>
+<AudioPlayer text="Yes, we serve breakfast from 7 AM to 10 AM in the dining area." voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
+<br />
+
+<p><strong>Mike:</strong> Great! I’ll be sure to come by tomorrow.</p>  
+<p><strong>Mike:</strong> Ótimo! Vou passar por lá amanhã.</p>
+<AudioPlayer text="Great! I’ll be sure to come by tomorrow." voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
+<br />
+
+<p><strong>Receptionist:</strong> Have a pleasant stay, Mr. Miller!</p>  
+<p><strong>Recepcionista:</strong> Tenha uma estadia agradável, Sr. Miller!</p>
+<AudioPlayer text="Have a pleasant stay, Mr. Miller!" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
+<br />
 
       </h4>
     </Col>

@@ -6,6 +6,7 @@ import HeaderMenuTexto from "../../components/header-menu-texto";
 import Logo from '../../components/logo';
 import { Container, Col, Row, Accordion} from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
+import AudioPlayer from '../../components/audio-player';
 
 export default function Conversacao6() {
     return(
