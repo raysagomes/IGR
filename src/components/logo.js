@@ -9,10 +9,10 @@ import LogoSite from '../images/logosite.png'
 
 function Logo() {
     return(
-<Container>
+<Container className="no-background">
 <Row>
-    <Col className="d-flex justify-content-center">
-    <Image src={LogoSite} style={{ width: '200px', height: '210px' }}/>
+    <Col className="d-flex justify-content-center ">
+    <Image className="logo" src={LogoSite} style={{ width: '200px', height: '210px' }}/>
     </Col>
     </Row>
     </Container>

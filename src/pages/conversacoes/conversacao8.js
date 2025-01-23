@@ -6,6 +6,7 @@ import HeaderMenuTexto from "../../components/header-menu-texto";
 import Logo from '../../components/logo';
 import { Container, Col, Row, Accordion} from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
+import ExplicacaoConversa from "../../components/obs-conversacao";
 
 export default function Conversacao8() {
     return(
@@ -22,6 +23,8 @@ export default function Conversacao8() {
   <Row>
     <Col className="coluna-texto1">
       <br /> 
+      <ExplicacaoConversa />
+
       <h4 className="h5-conversa"><i><strong>Mia e a Biblioteca</strong></i>
       <br /> 
       <br /> 

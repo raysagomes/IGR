@@ -5,6 +5,7 @@ import HeaderMenuVocabulario from "../../components/header-menu-vocabulario";
 import Logo from "../../components/logo";
 import { Container, Col, Row } from "react-bootstrap";
 import { Helmet } from "react-helmet-async";
+import AudioPlayerVocab from '../../components/audio-player-vocab';
 
 export default function Vocab1() {
     return(
@@ -30,210 +31,277 @@ export default function Vocab1() {
     <Col className="borderedCol">Zero</Col>
     <Col className="borderedCol">Zero</Col>
   </Row>
+  <AudioPlayerVocab text="0" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow1">
     <Col className="borderedCol">1</Col>
     <Col className="borderedCol">Uân</Col>
     <Col className="borderedCol">One</Col>
     <Col className="borderedCol">Um</Col>
   </Row>
+  <AudioPlayerVocab text="1" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
   <Row className="borderedRow">
     <Col className="borderedCol">2</Col>
     <Col className="borderedCol">Tchû</Col>
     <Col className="borderedCol">Two</Col>
     <Col className="borderedCol">Dois</Col>
   </Row>
+  <AudioPlayerVocab text="2" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow1">
     <Col className="borderedCol">3</Col>
     <Col className="borderedCol">Trúí</Col>
     <Col className="borderedCol">Three</Col>
     <Col className="borderedCol">Três</Col>
   </Row>
+  <AudioPlayerVocab text="3" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow">
     <Col className="borderedCol">4</Col>
     <Col className="borderedCol">Fór</Col>
     <Col className="borderedCol">Four</Col>
     <Col className="borderedCol">Quatro</Col>
   </Row>
+  <AudioPlayerVocab text="4" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow1">
     <Col className="borderedCol">5</Col>
     <Col className="borderedCol">Fáive</Col>
     <Col className="borderedCol">Five</Col>
     <Col className="borderedCol">Cinco</Col>
   </Row>
+  <AudioPlayerVocab text="5" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow">
     <Col className="borderedCol">6</Col>
     <Col className="borderedCol">Sícs</Col>
     <Col className="borderedCol">Six</Col>
     <Col className="borderedCol">Seis</Col>
   </Row>
+  <AudioPlayerVocab text="6" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow1">
     <Col className="borderedCol">7</Col>
     <Col className="borderedCol">Séven</Col>
     <Col className="borderedCol">Seven</Col>
     <Col className="borderedCol">Sete</Col>
   </Row>
+  <AudioPlayerVocab text="7" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
   <Row className="borderedRow">
     <Col className="borderedCol">8</Col>
     <Col className="borderedCol">Êit</Col>
     <Col className="borderedCol">Eight</Col>
     <Col className="borderedCol">Oito</Col>
   </Row>
+  <AudioPlayerVocab text="8" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow1">
     <Col className="borderedCol">9</Col>
     <Col className="borderedCol">Náin</Col>
     <Col className="borderedCol">Nine</Col>
     <Col className="borderedCol">Nove</Col>
   </Row>
+  <AudioPlayerVocab text="9" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow">
     <Col className="borderedCol">10</Col>
     <Col className="borderedCol">Ten</Col>
     <Col className="borderedCol">Ten</Col>
     <Col className="borderedCol">Dez</Col>
   </Row>
+  <AudioPlayerVocab text="10" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow1">
     <Col className="borderedCol">11</Col>
     <Col className="borderedCol">Iléven</Col>
     <Col className="borderedCol">Eleven</Col>
     <Col className="borderedCol">Onze</Col>
   </Row>
+  <AudioPlayerVocab text="11" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow">
     <Col className="borderedCol">12</Col>
     <Col className="borderedCol">Tuélv</Col>
     <Col className="borderedCol">Twelve</Col>
     <Col className="borderedCol">Doze</Col>
   </Row>
+  <AudioPlayerVocab text="12" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow1">
     <Col className="borderedCol">13</Col>
     <Col className="borderedCol">Târtín</Col>
     <Col className="borderedCol">Thirteen</Col>
     <Col className="borderedCol">Treze</Col>
   </Row>
+  <AudioPlayerVocab text="13" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow">
     <Col className="borderedCol">14</Col>
     <Col className="borderedCol">Fórtin</Col>
     <Col className="borderedCol">Fourteen</Col>
     <Col className="borderedCol">Catorze</Col>
   </Row>
+  <AudioPlayerVocab text="14" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow1">
     <Col className="borderedCol">15</Col>
     <Col className="borderedCol">Fiftin</Col>
     <Col className="borderedCol">Fifteen</Col>
     <Col className="borderedCol">Quinze</Col>
   </Row>
+  <AudioPlayerVocab text="15" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow">
     <Col className="borderedCol">16</Col>
     <Col className="borderedCol">Sikstin</Col>
     <Col className="borderedCol">Sixteen</Col>
     <Col className="borderedCol">Dezesseis</Col>
   </Row>
+  <AudioPlayerVocab text="16" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow1">
     <Col className="borderedCol">17</Col>
     <Col className="borderedCol">Séventin</Col>
     <Col className="borderedCol">Seventeen</Col>
     <Col className="borderedCol">Dezessete</Col>
   </Row>
+  <AudioPlayerVocab text="17" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow">
     <Col className="borderedCol">18</Col>
     <Col className="borderedCol">Êitín</Col>
     <Col className="borderedCol">Eighteen</Col>
     <Col className="borderedCol">Dezoito</Col>
   </Row>
+  <AudioPlayerVocab text="18" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow1">
     <Col className="borderedCol">19</Col>
     <Col className="borderedCol">Náintin</Col>
     <Col className="borderedCol">Nineteen</Col>
     <Col className="borderedCol">Dezenove</Col>
   </Row>
+  <AudioPlayerVocab text="19" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow">
     <Col className="borderedCol">20</Col>
     <Col className="borderedCol">Tuênti</Col>
     <Col className="borderedCol">Twenty</Col>
     <Col className="borderedCol">Vinte</Col>
   </Row>
+  <AudioPlayerVocab text="20" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow1">
     <Col className="borderedCol">21</Col>
     <Col className="borderedCol">Tuênti Uân</Col>
     <Col className="borderedCol">Twenty-One</Col>
     <Col className="borderedCol">Vinte e Um</Col>
   </Row>
+  <AudioPlayerVocab text="21" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow">
     <Col className="borderedCol">30</Col>
     <Col className="borderedCol">Târti</Col>
     <Col className="borderedCol">Thirty</Col>
     <Col className="borderedCol">Trinta</Col>
   </Row>
+  <AudioPlayerVocab text="30" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow1">
     <Col className="borderedCol">40</Col>
     <Col className="borderedCol">Fôrti</Col>
     <Col className="borderedCol">Forty</Col>
     <Col className="borderedCol">Quarenta</Col>
   </Row>
+  <AudioPlayerVocab text="40" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow">
     <Col className="borderedCol">50</Col>
     <Col className="borderedCol">Fífti</Col>
     <Col className="borderedCol">Fifty</Col>
     <Col className="borderedCol">Cinquenta</Col>
   </Row>
+  <AudioPlayerVocab text="50" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow1">
     <Col className="borderedCol">60</Col>
     <Col className="borderedCol">Siksti</Col>
     <Col className="borderedCol">Sixty</Col>
     <Col className="borderedCol">Sessenta</Col>
   </Row>
+  <AudioPlayerVocab text="60" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow">
     <Col className="borderedCol">70</Col>
     <Col className="borderedCol">Séventi</Col>
     <Col className="borderedCol">Seventy</Col>
     <Col className="borderedCol">Setenta</Col>
   </Row>
+  <AudioPlayerVocab text="70" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow1">
     <Col className="borderedCol">80</Col>
     <Col className="borderedCol">Êiti</Col>
     <Col className="borderedCol">Eighty</Col>
     <Col className="borderedCol">Oitenta</Col>
   </Row>
+  <AudioPlayerVocab text="80" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow">
     <Col className="borderedCol">90</Col>
     <Col className="borderedCol">Náiniti</Col>
     <Col className="borderedCol">Ninety</Col>
     <Col className="borderedCol">Noventa</Col>
   </Row>
+  <AudioPlayerVocab text="90" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow1">
     <Col className="borderedCol">100</Col>
     <Col className="borderedCol">Uan Handred</Col>
     <Col className="borderedCol">One Hundred</Col>
     <Col className="borderedCol">Cem</Col>
   </Row>
+  <AudioPlayerVocab text="100" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow">
     <Col className="borderedCol">1,000</Col>
     <Col className="borderedCol">A/Uan Fausand</Col>
     <Col className="borderedCol">A/One Thousand</Col>
     <Col className="borderedCol">1.000 A / Mil</Col>
   </Row>
+  <AudioPlayerVocab text="1000" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow1">
     <Col className="borderedCol">10,000</Col>
     <Col className="borderedCol">Ten Fausand</Col>
     <Col className="borderedCol">Ten Thousand</Col>
     <Col className="borderedCol">10.000 Dez Mil</Col>
   </Row>
+  <AudioPlayerVocab text="10000" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow">
     <Col className="borderedCol">100,000</Col>
     <Col className="borderedCol">A/Uan Handred Fausand</Col>
     <Col className="borderedCol">A/One Hundred Thousand</Col>
     <Col className="borderedCol">100.000 A / Cem Mil</Col>
   </Row>
+  <AudioPlayerVocab text="100000" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow1">
     <Col className="borderedCol">1,000,000</Col>
     <Col className="borderedCol">A/Uan Milion</Col>
     <Col className="borderedCol">A/One Million</Col>
     <Col className="borderedCol">1.000.000 A / Um Milhão</Col>
   </Row>
+  <AudioPlayerVocab text="1000000" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+
   <Row className="borderedRow">
     <Col className="borderedCol">1,000,000,000</Col>
     <Col className="borderedCol">A/Uan Bilion</Col>
     <Col className="borderedCol">A/One Billion</Col>
     <Col className="borderedCol">1.000.000.000 Um Bilhão</Col>
   </Row>
+  <AudioPlayerVocab text="1000000000" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
 
     </Container>
 

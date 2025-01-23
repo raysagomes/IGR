@@ -12,7 +12,7 @@ export default function TextoAudio() {
 <Container>
       <Row>
         <Col>
-        <h4 className="h4-Texto-audio">Audio Player</h4>
+        <h4 className="h4-Texto-audio no-background">Audio Player</h4>
         <p> Abaixo, ao clicar no play, você pode escutar o texto sendo tocado, e na barra você pode selecionar a velocidade que você quer escutar. </p>
         <p>Obs: Para escutar com a nova velocidade escolhida, clique no botão de ⏹️ e depois no de play novamente.</p>
 </Col>

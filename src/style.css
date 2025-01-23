@@ -1,4 +1,4 @@
-/* body {
+ body {
   background-image: url('images/background-pencil.jpg');
   background-size: cover;
   background-position: center;
@@ -14,7 +14,17 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-} */
+} 
+
+.logo{
+  background-color: white;
+}
+
+.no-background {
+  background-image: none;
+  background-color: transparent;
+}
+
 .div-header-menu{
     display: flex;
     justify-content: center;
@@ -258,6 +268,12 @@ margin-bottom: 80px;
     padding: 10px;
   }
 
+  .p-explicacao-conversa{
+    font-size: medium;
+    color: red;
+    margin-left: 40px;
+    margin-top: 15px;
+  }
   .p-explicacao{ 
     font-size: large;
     margin-left: 40px;

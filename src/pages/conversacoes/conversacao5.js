@@ -7,6 +7,7 @@ import Logo from '../../components/logo';
 import { Container, Col, Row, Accordion} from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
 import AudioPlayer from '../../components/audio-player';
+import ExplicacaoConversa from "../../components/obs-conversacao";
 
 export default function Conversacao5() {
     return(
@@ -23,6 +24,8 @@ export default function Conversacao5() {
   <Row>
     <Col className="coluna-texto1">
       <br /> 
+      <ExplicacaoConversa />
+
       <h4 className="h5-conversa"><i><strong>Michelle e o Cinema</strong></i>
       <br /> 
       <br /> 

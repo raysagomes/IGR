@@ -7,6 +7,7 @@ import Logo from '../../components/logo';
 import { Container, Col, Row, Accordion} from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
 import AudioPlayer from '../../components/audio-player';
+import ExplicacaoConversa from "../../components/obs-conversacao";
 
 
 export default function Conversacao3() {
@@ -25,6 +26,8 @@ export default function Conversacao3() {
   <Row>
     <Col className="coluna-texto1">
       <br /> 
+      <ExplicacaoConversa />
+
       <h4 className="h5-conversa"><i><strong>Karen e o Restaurante</strong></i>
       <br /> 
       <br /> 

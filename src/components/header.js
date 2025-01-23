@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 function Header() {
     return(
 <div> 
-<Navbar className="header-topo" data-bs-theme="dark">
-        <Container>
+<Navbar className="header-topo no-background" data-bs-theme="dark">
+        <Container className="no-background">
           <Navbar.Brand href="/">IGR</Navbar.Brand>
         </Container>
       </Navbar>

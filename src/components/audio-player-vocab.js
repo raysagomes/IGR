@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faPause, faStop } from '@fortawesome/free-solid-svg-icons';
 
-const AudioPlayer = ({ text, voiceName }) => {
+const AudioPlayerVocab = ({ text, voiceName }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [selectedVoice, setSelectedVoice] = useState(null);
   const [rate, setRate] = useState(1);
@@ -56,14 +56,14 @@ const AudioPlayer = ({ text, voiceName }) => {
   };
 
   return (
-    <div style={{ marginBottom: '5px' }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+    <div style={{ marginBottom: '1px' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '1px' }}>
         <button 
           onClick={isPlaying ? stopAudio : startAudio} 
-          style={{ fontSize: '0.7rem', padding: '5px 8px' }} 
+          style={{ fontSize: '0.5rem', padding: '5px 8px', margin: 0, border: 'none', background: 'transparent' }} 
           disabled={loading} 
         >
-          <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} />
+          <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} style={{ margin: 0 }} />
         </button>
         <input
           type="range"
@@ -72,23 +72,21 @@ const AudioPlayer = ({ text, voiceName }) => {
           step="0.1"
           value={rate}
           onChange={(e) => setRate(parseFloat(e.target.value))}
-          style={{ margin: '0 5px', width: '100px', height: '4px' }} 
+          style={{ margin: '0 5px', width: '80px', height: '2px' }} 
           disabled={loading} 
         />
         <button 
           onClick={stopAudio} 
-          style={{ fontSize: '0.8rem', padding: '5px 8px' }} 
+          style={{ fontSize: '0.5rem', padding: '5px 8px', margin: 0, border: 'none', background: 'transparent' }} 
           disabled={loading} 
         >
-          <FontAwesomeIcon icon={faStop} />
+          <FontAwesomeIcon icon={faStop} style={{ margin: 0 }} />
         </button>
       </div>
-      <div>
-        <label style={{ fontSize: '0.8rem' }}>Rate: {rate.toFixed(1)}</label>
-      </div>
+      
       {loading && <div style={{ fontSize: '0.8rem', color: 'gray' }}>Loading voices...</div>}
     </div>
   );
 };
 
-export default AudioPlayer;
+export default AudioPlayerVocab;

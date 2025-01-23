@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
+import ExplicacaoConversa from "../../components/obs-conversacao";
 import { Helmet } from 'react-helmet-async';
 import HeaderMenuTexto from "../../components/header-menu-texto";
 import Logo from '../../components/logo';
@@ -23,6 +24,7 @@ export default function Conversacao1() {
       <Row>
         <Col className="coluna-texto1">
         <br /> 
+        <ExplicacaoConversa />
         <h4 className="h5-conversa"><i><strong>Julie Encontra um Estrangeiro</strong></i>
         <br /> 
         <br /> 

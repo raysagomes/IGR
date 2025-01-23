@@ -8,7 +8,7 @@ import Nav from 'react-bootstrap/Nav';
 
 function HeaderMenuConversacoes() {
     return(
-<div className="div-header-menu"> 
+<div className="div-header-menu no-background"> 
 <Nav bg="primary" data-bs-theme="dark" className="justify-content-center headerMenu" fixed="top">
         <Nav.Item>
           <Nav.Link className="nav-item"  href="/">Inicio</Nav.Link>
