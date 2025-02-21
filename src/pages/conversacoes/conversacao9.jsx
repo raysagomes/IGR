@@ -6,6 +6,7 @@ import HeaderMenuTexto from "../../components/headers/header-menu-texto";
 import Logo from '../../components/logo';
 import { Container, Col, Row} from "react-bootstrap";
 import ExplicacaoConversa from "../../components/obs-conversacao";
+import AudioPlayer from '../../components/audio-player';
 
 export default function Conversacao9() {
     return(
@@ -28,37 +29,46 @@ export default function Conversacao9() {
       <br /> 
       <br /> 
 
-      <p><strong>Daniel:</strong> Excuse me, where is the check-in counter for Flight 345?</p>  
-      <p><strong>Daniel:</strong> Com licença, onde fica o balcão de check-in para o voo 345?</p>
-      <br /> 
+      
+<p><strong>Daniel:</strong> Excuse me, where is the check-in counter for Flight 345?</p>  
+<p><strong>Daniel:</strong> Com licença, onde fica o balcão de check-in para o voo 345?</p>
+<AudioPlayer text="Excuse me, where is the check-in counter for Flight 345?" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+<br />
 
-      <p><strong>Airport Attendant:</strong> It’s over there, near Gate 12.</p>  
-      <p><strong>Atendente do Aeroporto:</strong> Fica ali, perto do portão 12.</p>
-      <br /> 
+<p><strong>Airport Attendant:</strong> It’s over there, near Gate 12.</p>  
+<p><strong>Atendente do Aeroporto:</strong> Fica ali, perto do portão 12.</p>
+<AudioPlayer text="It’s over there, near Gate 12." voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+<br />
 
-      <p><strong>Daniel:</strong> Thank you! Do I need to show any documents?</p>  
-      <p><strong>Daniel:</strong> Obrigado! Eu preciso mostrar algum documento?</p>
-      <br /> 
+<p><strong>Daniel:</strong> Thank you! Do I need to show any documents?</p>  
+<p><strong>Daniel:</strong> Obrigado! Eu preciso mostrar algum documento?</p>
+<AudioPlayer text="Thank you! Do I need to show any documents?" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+<br />
 
-      <p><strong>Airport Attendant:</strong> Yes, please show your passport and ticket.</p>  
-      <p><strong>Atendente do Aeroporto:</strong> Sim, por favor, mostre seu passaporte e bilhete.</p>
-      <br /> 
+<p><strong>Airport Attendant:</strong> Yes, please show your passport and ticket.</p>  
+<p><strong>Atendente do Aeroporto:</strong> Sim, por favor, mostre seu passaporte e bilhete.</p>
+<AudioPlayer text="Yes, please show your passport and ticket." voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+<br />
 
-      <p><strong>Daniel:</strong> Alright! Is there a lounge for first-class passengers?</p>  
-      <p><strong>Daniel:</strong> Tudo bem! Tem um lounge para passageiros de primeira classe?</p>
-      <br /> 
+<p><strong>Daniel:</strong> Alright! Is there a lounge for first-class passengers?</p>  
+<p><strong>Daniel:</strong> Tudo bem! Tem um lounge para passageiros de primeira classe?</p>
+<AudioPlayer text="Alright! Is there a lounge for first-class passengers?" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+<br />
 
-      <p><strong>Airport Attendant:</strong> Yes, the lounge is just next to Gate 14.</p>  
-      <p><strong>Atendente do Aeroporto:</strong> Sim, o lounge fica logo ao lado do portão 14.</p>
-      <br /> 
+<p><strong>Airport Attendant:</strong> Yes, the lounge is just next to Gate 14.</p>  
+<p><strong>Atendente do Aeroporto:</strong> Sim, o lounge fica logo ao lado do portão 14.</p>
+<AudioPlayer text="Yes, the lounge is just next to Gate 14." voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+<br />
 
-      <p><strong>Daniel:</strong> Thank you! I’ll head there after check-in.</p>  
-      <p><strong>Daniel:</strong> Obrigado! Vou lá depois do check-in.</p>
-      <br /> 
+<p><strong>Daniel:</strong> Thank you! I’ll head there after check-in.</p>  
+<p><strong>Daniel:</strong> Obrigado! Vou lá depois do check-in.</p>
+<AudioPlayer text="Thank you! I’ll head there after check-in." voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+<br />
 
-      <p><strong>Airport Attendant:</strong> Have a pleasant flight!</p>  
-      <p><strong>Atendente do Aeroporto:</strong> Tenha um bom voo!</p>
-      <br /> 
+<p><strong>Airport Attendant:</strong> Have a pleasant flight!</p>  
+<p><strong>Atendente do Aeroporto:</strong> Tenha um bom voo!</p>
+<AudioPlayer text="Have a pleasant flight!" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+<br />
 
       </h4>
     </Col>
