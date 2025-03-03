@@ -14,6 +14,7 @@ import Gramatica7 from '../pages/gramatica/gramatica7';
 import Gramatica8 from '../pages/gramatica/gramatica8';
 import Gramatica9 from '../pages/gramatica/gramatica9';
 import Gramatica10 from '../pages/gramatica/gramatica10';
+import Gramatica11 from '../pages/gramatica/gramatica11';
 
 
 const GramaticaRotas = () => {
@@ -32,6 +33,7 @@ const GramaticaRotas = () => {
         <Route path="gramatica8" element={<Gramatica8 />} />
         <Route path="gramatica9" element={<Gramatica9 />} />
         <Route path="gramatica10" element={<Gramatica10 />} />
+        <Route path="gramatica11" element={<Gramatica11 />} />
 
 
       </Routes>

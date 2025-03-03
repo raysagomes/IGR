@@ -283,6 +283,7 @@ export default function Gramatica10() {
   </Row>
 </Container>
 
+
 <Footer />
 </>
     );

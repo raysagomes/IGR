@@ -124,10 +124,19 @@ function ListaGramatica() {
         <div className="ms-2 me-auto">
         <Link to="/gramatica/gramatica10" className="text-decoration-none texto-link"> 
           <div className="fw-bold">Adjetivos e Advérbios</div> </Link>
-
         </div>
-  
       </ListGroup.Item>
+
+      <ListGroup.Item
+        as="li"
+        className="d-flex justify-content-between align-items-start mb-3 lista-item" >
+          
+        <div className="ms-2 me-auto">
+        <Link to="/gramatica/gramatica11" className="text-decoration-none texto-link"> 
+          <div className="fw-bold">Gerúndio</div> </Link>
+        </div>
+      </ListGroup.Item>
+
     </ListGroup>
 
     </Col>
