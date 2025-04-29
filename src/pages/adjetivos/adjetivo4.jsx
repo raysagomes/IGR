@@ -10,317 +10,232 @@ import AudioPlayerVocab from '../../components/audio-player-vocab';
 
 export default function VocabAdjetivo4() {
     return(
-<>
-<Helmet>
-        <title>Corpo</title>
+      <>
+      <Helmet>
+          <title>Adjetivos de Sentimentos</title>
       </Helmet>
-<Header /> 
-<Logo /> 
-<HeaderMenuVocabulario />
-<div className="h1-titulo-da-pagina"> <h1 className="fw-bold h1-titulo-da-pagina">Corpo</h1> </div>
+      <Header />
+      <Logo />
+      <HeaderMenuVocabulario />
+      <div className="h1-titulo-da-pagina">
+          <h1 className="fw-bold h1-titulo-da-pagina">Adjetivos de Sentimentos</h1>
+      </div>
 
-<ExplicacaoVocab />
+      <ExplicacaoVocab />
 
-<Container className="colunasVocabulario">
+      <Container className="colunasVocabulario">
+          <Row className="borderedRow">
+              <Col className="borderedCol header-col">Como se escreve</Col>
+              <Col className="borderedCol header-col">Como sôa</Col>
+              <Col className="borderedCol header-col">Tradução</Col>
+          </Row>
 
-<Row className="borderedRow">
-  <Col className="borderedCol header-col">Como se escreve</Col>
-  <Col className="borderedCol header-col">Como sôa</Col>
-  <Col className="borderedCol header-col">Tradução</Col>
-</Row>
-<Row className="borderedRow">
-        <Col className="borderedCol">Ankle</Col>
-        <Col className="borderedCol">ÊnkOU</Col>
-        <Col className="borderedCol">Tornozelo</Col>
-        <AudioPlayerVocab
-          text="Ankle"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow1">
-        <Col className="borderedCol">Arm</Col>
-        <Col className="borderedCol">Árm</Col>
-        <Col className="borderedCol">Braço</Col>
-        <AudioPlayerVocab
-          text="Arm"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow">
-        <Col className="borderedCol">Arteries</Col>
-        <Col className="borderedCol">Ártiruiz</Col>
-        <Col className="borderedCol">Artérias</Col>
-        <AudioPlayerVocab
-          text="Arteries"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow1">
-        <Col className="borderedCol">Back</Col>
-        <Col className="borderedCol">Bék</Col>
-        <Col className="borderedCol">Costas</Col>
-        <AudioPlayerVocab
-          text="Back"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow">
-        <Col className="borderedCol">Blood</Col>
-        <Col className="borderedCol">Blâd</Col>
-        <Col className="borderedCol">Sangue</Col>
-        <AudioPlayerVocab
-          text="Blood"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow1">
-        <Col className="borderedCol">Bones</Col>
-        <Col className="borderedCol">Bôunz</Col>
-        <Col className="borderedCol">Ossos</Col>
-        <AudioPlayerVocab
-          text="Bones"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow">
-        <Col className="borderedCol">Brain</Col>
-        <Col className="borderedCol">Bruêin</Col>
-        <Col className="borderedCol">Cérebro</Col>
-        <AudioPlayerVocab
-          text="Brain"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow1">
-        <Col className="borderedCol">Chest</Col>
-        <Col className="borderedCol">Chést</Col>
-        <Col className="borderedCol">Tórax</Col>
-        <AudioPlayerVocab
-          text="Chest"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow">
-        <Col className="borderedCol">Elbow</Col>
-        <Col className="borderedCol">Êlbôu</Col>
-        <Col className="borderedCol">Cotovelo</Col>
-        <AudioPlayerVocab
-          text="Elbow"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow1">
-        <Col className="borderedCol">Finger</Col>
-        <Col className="borderedCol">Fínguêr</Col>
-        <Col className="borderedCol">Dedo</Col>
-        <AudioPlayerVocab
-          text="Finger"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow">
-        <Col className="borderedCol">Fingernail</Col>
-        <Col className="borderedCol">Fínguêr-nêiou</Col>
-        <Col className="borderedCol">Unha</Col>
-        <AudioPlayerVocab
-          text="Fingernail"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow1">
-        <Col className="borderedCol">Feet</Col>
-        <Col className="borderedCol">Fít</Col>
-        <Col className="borderedCol">Pés</Col>
-        <AudioPlayerVocab
-          text="Feet"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow">
-        <Col className="borderedCol">Foot</Col>
-        <Col className="borderedCol">Fút</Col>
-        <Col className="borderedCol">Pé</Col>
-        <AudioPlayerVocab
-          text="Foot"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow1">
-        <Col className="borderedCol">Head</Col>
-        <Col className="borderedCol">Hêd</Col>
-        <Col className="borderedCol">Cabeça</Col>
-        <AudioPlayerVocab
-          text="Head"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow">
-        <Col className="borderedCol">Heart</Col>
-        <Col className="borderedCol">Hárt</Col>
-        <Col className="borderedCol">Coração</Col>
-        <AudioPlayerVocab
-          text="Heart"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow1">
-        <Col className="borderedCol">Hip</Col>
-        <Col className="borderedCol">Híp</Col>
-        <Col className="borderedCol">Quadril</Col>
-        <AudioPlayerVocab
-          text="Hip"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow">
-        <Col className="borderedCol">Jaw</Col>
-        <Col className="borderedCol">Jóu</Col>
-        <Col className="borderedCol">Mandíbula</Col>
-        <AudioPlayerVocab
-          text="Jaw"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow1">
-        <Col className="borderedCol">Kidney</Col>
-        <Col className="borderedCol">Kídnî</Col>
-        <Col className="borderedCol">Rim</Col>
-        <AudioPlayerVocab
-          text="Kidney"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow">
-        <Col className="borderedCol">Knee</Col>
-        <Col className="borderedCol">Nîi</Col>
-        <Col className="borderedCol">Joelho</Col>
-        <AudioPlayerVocab
-          text="Knee"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow1">
-        <Col className="borderedCol">Leg</Col>
-        <Col className="borderedCol">Lég</Col>
-        <Col className="borderedCol">Perna</Col>
-        <AudioPlayerVocab
-          text="Leg"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow">
-        <Col className="borderedCol">Lungs</Col>
-        <Col className="borderedCol">Lângz</Col>
-        <Col className="borderedCol">Pulmões</Col>
-        <AudioPlayerVocab
-          text="Lungs"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow1">
-        <Col className="borderedCol">Neck</Col>
-        <Col className="borderedCol">Nék</Col>
-        <Col className="borderedCol">Pescoço</Col>
-        <AudioPlayerVocab
-          text="Neck"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow">
-        <Col className="borderedCol">Shoulder</Col>
-        <Col className="borderedCol">Shôuldêr</Col>
-        <Col className="borderedCol">Ombro</Col>
-        <AudioPlayerVocab
-          text="Shoulder"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow1">
-        <Col className="borderedCol">Skeleton</Col>
-        <Col className="borderedCol">Skéletên</Col>
-        <Col className="borderedCol">Esqueleto</Col>
-        <AudioPlayerVocab
-          text="Skeleton"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow">
-        <Col className="borderedCol">Skull</Col>
-        <Col className="borderedCol">Skóu</Col>
-        <Col className="borderedCol">Crânio</Col>
-        <AudioPlayerVocab
-          text="Skull"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow1">
-        <Col className="borderedCol">Spine, Backbone</Col>
-        <Col className="borderedCol">Spáini, Bék-bôun</Col>
-        <Col className="borderedCol">Coluna, Espinha Dorsal</Col>
-        <AudioPlayerVocab
-          text="Spine, Backbone"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow">
-        <Col className="borderedCol">Stomach</Col>
-        <Col className="borderedCol">Stômâk</Col>
-        <Col className="borderedCol">Estômago</Col>
-        <AudioPlayerVocab
-          text="Stomach"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow1">
-        <Col className="borderedCol">Teeth</Col>
-        <Col className="borderedCol">Tîth</Col>
-        <Col className="borderedCol">Dentes</Col>
-        <AudioPlayerVocab
-          text="Teeth"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow">
-        <Col className="borderedCol">Toes</Col>
-        <Col className="borderedCol">Tôuz</Col>
-        <Col className="borderedCol">Dedos dos Pés</Col>
-        <AudioPlayerVocab
-          text="Toes"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow1">
-        <Col className="borderedCol">Tooth</Col>
-        <Col className="borderedCol">Tûth</Col>
-        <Col className="borderedCol">Dente</Col>
-        <AudioPlayerVocab
-          text="Tooth"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow">
-        <Col className="borderedCol">Veins</Col>
-        <Col className="borderedCol">Vêinz</Col>
-        <Col className="borderedCol">Veias</Col>
-        <AudioPlayerVocab
-          text="Veins"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-      <Row className="borderedRow1">
-        <Col className="borderedCol">Wrist</Col>
-        <Col className="borderedCol">Ruîst</Col>
-        <Col className="borderedCol">Pulso</Col>
-        <AudioPlayerVocab
-          text="Wrist"
-          voiceName="Microsoft Jenny Online (Natural) - English (United States)"
-        />
-      </Row>
-    </Container>
+          <Row className="borderedRow">
+              <Col className="borderedCol">Happy</Col>
+              <Col className="borderedCol">Répî</Col>
+              <Col className="borderedCol">Feliz</Col>
+              <AudioPlayerVocab text="Happy" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+          </Row>
 
+          <Row className="borderedRow1">
+              <Col className="borderedCol">Sad</Col>
+              <Col className="borderedCol">Séd</Col>
+              <Col className="borderedCol">Triste</Col>
+              <AudioPlayerVocab text="Sad" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+          </Row>
 
+          <Row className="borderedRow">
+              <Col className="borderedCol">Angry</Col>
+              <Col className="borderedCol">Êngri</Col>
+              <Col className="borderedCol">Bravo</Col>
+              <AudioPlayerVocab text="Angry" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+          </Row>
 
-<Footer />
-</>
+          <Row className="borderedRow1">
+              <Col className="borderedCol">Excited</Col>
+              <Col className="borderedCol">Êk-sáitêd</Col>
+              <Col className="borderedCol">Animado</Col>
+              <AudioPlayerVocab text="Excited" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+          </Row>
+
+          <Row className="borderedRow">
+              <Col className="borderedCol">Nervous</Col>
+              <Col className="borderedCol">Nârvâs</Col>
+              <Col className="borderedCol">Nervoso</Col>
+              <AudioPlayerVocab text="Nervous" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+          </Row>
+
+          <Row className="borderedRow1">
+              <Col className="borderedCol">Scared</Col>
+              <Col className="borderedCol">Skérd</Col>
+              <Col className="borderedCol">Assustado</Col>
+              <AudioPlayerVocab text="Scared" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+          </Row>
+
+          <Row className="borderedRow">
+              <Col className="borderedCol">Proud</Col>
+              <Col className="borderedCol">Práud</Col>
+              <Col className="borderedCol">Orgulhoso</Col>
+              <AudioPlayerVocab text="Proud" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+          </Row>
+
+          <Row className="borderedRow1">
+              <Col className="borderedCol">Lonely</Col>
+              <Col className="borderedCol">Lôunlî</Col>
+              <Col className="borderedCol">Solitário</Col>
+              <AudioPlayerVocab text="Lonely" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+          </Row>
+
+          <Row className="borderedRow">
+              <Col className="borderedCol">Confused</Col>
+              <Col className="borderedCol">Cân-fiuzd</Col>
+              <Col className="borderedCol">Confuso</Col>
+              <AudioPlayerVocab text="Confused" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+          </Row>
+
+          <Row className="borderedRow1">
+              <Col className="borderedCol">Relaxed</Col>
+              <Col className="borderedCol">Ri-lákst</Col>
+              <Col className="borderedCol">Relaxado</Col>
+              <AudioPlayerVocab text="Relaxed" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+          </Row>
+
+          <Row className="borderedRow">
+              <Col className="borderedCol">Bored</Col>
+              <Col className="borderedCol">Bórd</Col>
+              <Col className="borderedCol">Entediado</Col>
+              <AudioPlayerVocab text="Bored" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+          </Row>
+
+          {/* Mais adjetivos adicionados aqui */}
+          <Row className="borderedRow1">
+              <Col className="borderedCol">Anxious</Col>
+              <Col className="borderedCol">Ênk-shâs</Col>
+              <Col className="borderedCol">Ansioso</Col>
+              <AudioPlayerVocab text="Anxious" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+          </Row>
+
+          <Row className="borderedRow">
+              <Col className="borderedCol">Hopeful</Col>
+              <Col className="borderedCol">Rôup-fâl</Col>
+              <Col className="borderedCol">Esperançoso</Col>
+              <AudioPlayerVocab text="Hopeful" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+          </Row>
+
+          <Row className="borderedRow1">
+              <Col className="borderedCol">Jealous</Col>
+              <Col className="borderedCol">Djélâs</Col>
+              <Col className="borderedCol">Com ciúmes</Col>
+              <AudioPlayerVocab text="Jealous" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+          </Row>
+
+          <Row className="borderedRow">
+              <Col className="borderedCol">Grateful</Col>
+              <Col className="borderedCol">Greit-fâl</Col>
+              <Col className="borderedCol">Grato</Col>
+              <AudioPlayerVocab text="Grateful" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+          </Row>
+
+          <Row className="borderedRow1">
+              <Col className="borderedCol">Ashamed</Col>
+              <Col className="borderedCol">â-shêimd</Col>
+              <Col className="borderedCol">Envergonhado</Col>
+              <AudioPlayerVocab text="Ashamed" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+          </Row>
+
+          <Row className="borderedRow">
+              <Col className="borderedCol">Embarrassed</Col>
+              <Col className="borderedCol">Êm-bérâst</Col>
+              <Col className="borderedCol">Constrangido</Col>
+              <AudioPlayerVocab text="Embarrassed" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+          </Row>
+
+          <Row className="borderedRow1">
+              <Col className="borderedCol">Guilty</Col>
+              <Col className="borderedCol">Guílti</Col>
+              <Col className="borderedCol">Culpado</Col>
+              <AudioPlayerVocab text="Guilty" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+          </Row>
+
+          <Row className="borderedRow">
+              <Col className="borderedCol">Frustrated</Col>
+              <Col className="borderedCol">Frâs-trêi-têd</Col>
+              <Col className="borderedCol">Frustrado</Col>
+              <AudioPlayerVocab text="Frustrated" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+          </Row>
+
+          <Row className="borderedRow1">
+                    <Col className="borderedCol">Overwhelmed</Col>
+                    <Col className="borderedCol">Ôuvâr-uélmd</Col>
+                    <Col className="borderedCol">Sobrecarregado</Col>
+                    <AudioPlayerVocab text="Overwhelmed" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+                </Row>
+
+                <Row className="borderedRow">
+                    <Col className="borderedCol">Content</Col>
+                    <Col className="borderedCol">Cân-tênt</Col>
+                    <Col className="borderedCol">Satisfeito</Col>
+                    <AudioPlayerVocab text="Content" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+                </Row>
+
+                <Row className="borderedRow1">
+                    <Col className="borderedCol">Amazed</Col>
+                    <Col className="borderedCol">â-mêizd</Col>
+                    <Col className="borderedCol">Maravilhado</Col>
+                    <AudioPlayerVocab text="Amazed" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+                </Row>
+
+                <Row className="borderedRow">
+                    <Col className="borderedCol">Heartbroken</Col>
+                    <Col className="borderedCol">Hárt-brôukân</Col>
+                    <Col className="borderedCol">De coração partido</Col>
+                    <AudioPlayerVocab text="Heartbroken" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+                </Row>
+
+                <Row className="borderedRow1">
+                    <Col className="borderedCol">Hopeful</Col>
+                    <Col className="borderedCol">Rôup-fâl</Col>
+                    <Col className="borderedCol">Esperançoso</Col>
+                    <AudioPlayerVocab text="Hopeful" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+                </Row>
+
+                <Row className="borderedRow">
+                    <Col className="borderedCol">Surprised</Col>
+                    <Col className="borderedCol">Sâr-práizd</Col>
+                    <Col className="borderedCol">Surpreso</Col>
+                    <AudioPlayerVocab text="Surprised" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+                </Row>
+
+                <Row className="borderedRow1">
+                    <Col className="borderedCol">Disappointed</Col>
+                    <Col className="borderedCol">Dî-sâ-póin-têd</Col>
+                    <Col className="borderedCol">Decepcionado</Col>
+                    <AudioPlayerVocab text="Disappointed" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+                </Row>
+
+                <Row className="borderedRow">
+                    <Col className="borderedCol">Grumpy</Col>
+                    <Col className="borderedCol">Grâmpî</Col>
+                    <Col className="borderedCol">Mal-humorado</Col>
+                    <AudioPlayerVocab text="Grumpy" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+                </Row>
+
+                <Row className="borderedRow1">
+                    <Col className="borderedCol">Optimistic</Col>
+                    <Col className="borderedCol">Óp-tê-mîstic</Col>
+                    <Col className="borderedCol">Otimista</Col>
+                    <AudioPlayerVocab text="Optimistic" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+                </Row>
+
+                <Row className="borderedRow">
+                    <Col className="borderedCol">Pessimistic</Col>
+                    <Col className="borderedCol">Pésê-mîstic</Col>
+                    <Col className="borderedCol">Pessimista</Col>
+                    <AudioPlayerVocab text="Pessimistic" voiceName="Microsoft Jenny Online (Natural) - English (United States)" />
+                </Row>
+      </Container>
+
+      <Footer />
+  </>
     );
 }

@@ -100,14 +100,14 @@ function LinksTextos() {
                   </Link>
                 </div>
               </ListGroup.Item>
-{/* 
+
               <ListGroup.Item
                 as="li"
                 className="d-flex justify-content-between align-items-start mb-3 lista-item" >
 
                 <div className="ms-2 me-auto">
                   <Link to="/textos/texto9" className="text-decoration-none texto-link">
-                    <div className="fw-bold">A visit to the Zoo</div>
+                    <div className="fw-bold">Efeito Borboleta</div>
                   </Link>
                 </div>
               </ListGroup.Item>
@@ -118,7 +118,7 @@ function LinksTextos() {
 
                 <div className="ms-2 me-auto">
                   <Link to="/textos/texto10" className="text-decoration-none texto-link">
-                    <div className="fw-bold">A visit to the Zoo</div>
+                    <div className="fw-bold">O grande Gatsby</div>
                   </Link>
                 </div>
               </ListGroup.Item>
@@ -129,7 +129,7 @@ function LinksTextos() {
 
                 <div className="ms-2 me-auto">
                   <Link to="/textos/texto11" className="text-decoration-none texto-link">
-                    <div className="fw-bold">A visit to the Zoo</div>
+                    <div className="fw-bold">Jornada de Joana para a Faculdade</div>
                   </Link>
                 </div>
               </ListGroup.Item>
@@ -140,12 +140,12 @@ function LinksTextos() {
 
                 <div className="ms-2 me-auto">
                   <Link to="/textos/texto12" className="text-decoration-none texto-link">
-                    <div className="fw-bold">A visit to the Zoo</div>
+                    <div className="fw-bold">Chef Lucas</div>
                   </Link>
                 </div>
               </ListGroup.Item>
 
-              <ListGroup.Item
+              {/* <ListGroup.Item
                 as="li"
                 className="d-flex justify-content-between align-items-start mb-3 lista-item" >
 
@@ -176,8 +176,8 @@ function LinksTextos() {
                     <div className="fw-bold">A visit to the Zoo</div>
                   </Link>
                 </div>
-              </ListGroup.Item> */}
-              
+              </ListGroup.Item> 
+               */}
             </ListGroup>
           </Col>
           <Col xs={12} md={3} className="extra-pagina-de-textos d-flex flex-column align-items-end">
