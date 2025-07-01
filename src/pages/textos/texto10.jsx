@@ -19,26 +19,47 @@ const AudioComponent = () => {
 
   const text = "The Great Gatsby is a classic novel written by F. Scott Fitzgerald, first published in 1925. Set during the Roaring Twenties, the story follows the life of the mysterious millionaire, Jay Gatsby, and his obsession with the beautiful Daisy Buchanan. The novel explores themes of wealth, social class, and the American Dream. Gatsby throws extravagant parties in an attempt to win back Daisy, but despite his wealth, he is never able to recapture the past. As the story unfolds, we learn about the complex relationships between the characters and the tragic consequences of Gatsby's pursuit of an unattainable dream.";
 
-  useEffect(() => {
-    const loadVoices = () => {
-      const availableVoices = window.speechSynthesis.getVoices();
-      console.log("Available voices:");
-      availableVoices.forEach(voice => {
-        console.log(`${voice.name} (${voice.lang})`);
-      });
-
-      const specificVoice = availableVoices.find(voice => voice.name === "Microsoft Jenny Online (Natural) - English (United States)");
-      if (specificVoice) {
+    useEffect(() => {
+      const loadVoices = () => {
+        const availableVoices = window.speechSynthesis.getVoices();
+        console.log("Available voices:");
+        availableVoices.forEach(voice => {
+          console.log(`${voice.name} (${voice.lang})`);
+        });
+    
+        let specificVoice = availableVoices.find(
+          voice => voice.name === "Microsoft Jenny Online (Natural) - English (United States)"
+        );
+    
+        if (!specificVoice) {
+          console.warn("Microsoft Jenny voice not found. Searching for fallback English (United States) voice...");
+          specificVoice = availableVoices.find(
+            voice =>
+              voice.name.toLowerCase().includes("english") &&
+              voice.name.toLowerCase().includes("united states")
+          );
+        }
+    
+        if (!specificVoice) {
+          specificVoice = availableVoices.find(
+            voice => voice.name.toLowerCase().includes("english")
+          );
+        }
+    
+        if (!specificVoice) {
+          specificVoice = availableVoices[0];
+        }
+    
         setSelectedVoice(specificVoice);
-      } else {
-        console.warn("Microsoft Ana voice not found. Using the first available voice.");
-        setSelectedVoice(availableVoices[0]);
-      }
-    };
-
-    window.speechSynthesis.onvoiceschanged = loadVoices;
-    loadVoices();
-  }, []);
+      };
+    
+      loadVoices();
+      window.speechSynthesis.onvoiceschanged = loadVoices;
+  
+      window.speechSynthesis.onvoiceschanged = loadVoices;
+      loadVoices();
+    }, []);
+  
 
   const startAudio = () => {
     const utterance = new SpeechSynthesisUtterance(text);

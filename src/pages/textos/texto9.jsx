@@ -19,26 +19,47 @@ const AudioComponent = () => {
 
   const text = "The Butterfly Effect is a psychological science fiction film that explores the chaos theory and the impact of individual choices. The protagonist, Evan Treborn, has the ability to travel through time and alter events from his past, trying to correct mistakes and save people close to him. However, each change he makes brings unexpected consequences, creating a cycle of increasingly chaotic events. The story begins with Evan, now an adult, trying to understand the traumas of his childhood, including the death of his father and the difficulties he and his friends faced over the years. During a visit to university, he discovers that he can go back in time through his diaries, where he writes everything that happened to him. Each time he alters something, a new version of his life and the lives of those around him emerge, but with even deeper and more disturbing consequences. With each trip to the past, Evan realizes that his attempts to improve situations end up creating new problems, sometimes worse than the original ones. The film explores the nature of free will, the consequences of our choices, and the inevitability of certain events. In the end, Evan tries one last time to do the right thing, but the conclusion leaves a reflection on the price of trying to change destiny.";
 
-  useEffect(() => {
-    const loadVoices = () => {
-      const availableVoices = window.speechSynthesis.getVoices();
-      console.log("Available voices:");
-      availableVoices.forEach(voice => {
-        console.log(`${voice.name} (${voice.lang})`);
-      });
-
-      const specificVoice = availableVoices.find(voice => voice.name === "Microsoft Jenny Online (Natural) - English (United States)");
-      if (specificVoice) {
-        setSelectedVoice(specificVoice);
-      } else {
-        console.warn("Microsoft Ana voice not found. Using the first available voice.");
-        setSelectedVoice(availableVoices[0]);
-      }
-    };
-
-    window.speechSynthesis.onvoiceschanged = loadVoices;
-    loadVoices();
-  }, []);
+   useEffect(() => {
+     const loadVoices = () => {
+       const availableVoices = window.speechSynthesis.getVoices();
+       console.log("Available voices:");
+       availableVoices.forEach(voice => {
+         console.log(`${voice.name} (${voice.lang})`);
+       });
+   
+       let specificVoice = availableVoices.find(
+         voice => voice.name === "Microsoft Jenny Online (Natural) - English (United States)"
+       );
+   
+       if (!specificVoice) {
+         console.warn("Microsoft Jenny voice not found. Searching for fallback English (United States) voice...");
+         specificVoice = availableVoices.find(
+           voice =>
+             voice.name.toLowerCase().includes("english") &&
+             voice.name.toLowerCase().includes("united states")
+         );
+       }
+   
+       if (!specificVoice) {
+         specificVoice = availableVoices.find(
+           voice => voice.name.toLowerCase().includes("english")
+         );
+       }
+   
+       if (!specificVoice) {
+         specificVoice = availableVoices[0];
+       }
+   
+       setSelectedVoice(specificVoice);
+     };
+   
+     loadVoices();
+     window.speechSynthesis.onvoiceschanged = loadVoices;
+ 
+     window.speechSynthesis.onvoiceschanged = loadVoices;
+     loadVoices();
+   }, []);
+ 
 
   const startAudio = () => {
     const utterance = new SpeechSynthesisUtterance(text);

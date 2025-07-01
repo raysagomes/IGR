@@ -33,26 +33,47 @@ const AudioComponent = () => {
     Today, Lucas is a renowned chef, known for his creativity and skill in the kitchen. He never forgets the challenges he faced at the beginning of his journey and how perseverance and hard work were essential in achieving his dream.
   `;
 
-  useEffect(() => {
-    const loadVoices = () => {
-      const availableVoices = window.speechSynthesis.getVoices();
-      console.log("Available voices:");
-      availableVoices.forEach(voice => {
-        console.log(`${voice.name} (${voice.lang})`);
-      });
-
-      const specificVoice = availableVoices.find(voice => voice.name === "Microsoft Jenny Online (Natural) - English (United States)");
-      if (specificVoice) {
+    useEffect(() => {
+      const loadVoices = () => {
+        const availableVoices = window.speechSynthesis.getVoices();
+        console.log("Available voices:");
+        availableVoices.forEach(voice => {
+          console.log(`${voice.name} (${voice.lang})`);
+        });
+    
+        let specificVoice = availableVoices.find(
+          voice => voice.name === "Microsoft Jenny Online (Natural) - English (United States)"
+        );
+    
+        if (!specificVoice) {
+          console.warn("Microsoft Jenny voice not found. Searching for fallback English (United States) voice...");
+          specificVoice = availableVoices.find(
+            voice =>
+              voice.name.toLowerCase().includes("english") &&
+              voice.name.toLowerCase().includes("united states")
+          );
+        }
+    
+        if (!specificVoice) {
+          specificVoice = availableVoices.find(
+            voice => voice.name.toLowerCase().includes("english")
+          );
+        }
+    
+        if (!specificVoice) {
+          specificVoice = availableVoices[0];
+        }
+    
         setSelectedVoice(specificVoice);
-      } else {
-        console.warn("Microsoft Ana voice not found. Using the first available voice.");
-        setSelectedVoice(availableVoices[0]);
-      }
-    };
-
-    window.speechSynthesis.onvoiceschanged = loadVoices;
-    loadVoices();
-  }, []);
+      };
+    
+      loadVoices();
+      window.speechSynthesis.onvoiceschanged = loadVoices;
+  
+      window.speechSynthesis.onvoiceschanged = loadVoices;
+      loadVoices();
+    }, []);
+  
 
   const startAudio = () => {
     const utterance = new SpeechSynthesisUtterance(text);

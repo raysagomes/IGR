@@ -26,15 +26,35 @@ const AudioComponent = () => {
       availableVoices.forEach(voice => {
         console.log(`${voice.name} (${voice.lang})`);
       });
-
-      const specificVoice = availableVoices.find(voice => voice.name === "Microsoft Jenny Online (Natural) - English (United States)");
-      if (specificVoice) {
-        setSelectedVoice(specificVoice);
-      } else {
-        console.warn("Microsoft Ana voice not found. Using the first available voice.");
-        setSelectedVoice(availableVoices[0]);
+  
+      let specificVoice = availableVoices.find(
+        voice => voice.name === "Microsoft Jenny Online (Natural) - English (United States)"
+      );
+  
+      if (!specificVoice) {
+        console.warn("Microsoft Jenny voice not found. Searching for fallback English (United States) voice...");
+        specificVoice = availableVoices.find(
+          voice =>
+            voice.name.toLowerCase().includes("english") &&
+            voice.name.toLowerCase().includes("united states")
+        );
       }
+  
+      if (!specificVoice) {
+        specificVoice = availableVoices.find(
+          voice => voice.name.toLowerCase().includes("english")
+        );
+      }
+  
+      if (!specificVoice) {
+        specificVoice = availableVoices[0];
+      }
+  
+      setSelectedVoice(specificVoice);
     };
+  
+    loadVoices();
+    window.speechSynthesis.onvoiceschanged = loadVoices;
 
     window.speechSynthesis.onvoiceschanged = loadVoices;
     loadVoices();

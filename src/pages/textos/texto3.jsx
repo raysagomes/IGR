@@ -19,26 +19,47 @@ const AudioComponent = () => {
 
   const text = "A Day at the Beach. Last Saturday, Emma and her friends decided to go to the beach. They woke up early in the morning, packed their bags with swimsuits, towels, and snacks, and drove to the coast. The weather was perfect – warm and sunny with a light breeze. When they arrived, they found a nice spot near the water and set up their towels and umbrellas. Emma loves the ocean, so she ran straight to the water. The waves were gentle, and she spent hours swimming and floating on the surface. Her friends played beach volleyball nearby, laughing and cheering each other on. After swimming, Emma joined them, and they had a lot of fun. Around noon, they all got hungry and decided to have a picnic. They had brought sandwiches, fresh fruit, and cold drinks. While they ate, they talked about their plans for the rest of the summer and shared stories from their recent travels.As the sun began to set, they packed up and took a last look at the beautiful view of the ocean. Tired but happy, they returned home, already planning their next adventure.";
 
-  useEffect(() => {
-    const loadVoices = () => {
-      const availableVoices = window.speechSynthesis.getVoices();
-      console.log("Available voices:");
-      availableVoices.forEach(voice => {
-        console.log(`${voice.name} (${voice.lang})`);
-      });
-
-      const specificVoice = availableVoices.find(voice => voice.name === "Microsoft Jenny Online (Natural) - English (United States)");
-      if (specificVoice) {
-        setSelectedVoice(specificVoice);
-      } else {
-        console.warn("Microsoft Ana voice not found. Using the first available voice.");
-        setSelectedVoice(availableVoices[0]);
-      }
-    };
-
-    window.speechSynthesis.onvoiceschanged = loadVoices;
-    loadVoices();
-  }, []);
+   useEffect(() => {
+     const loadVoices = () => {
+       const availableVoices = window.speechSynthesis.getVoices();
+       console.log("Available voices:");
+       availableVoices.forEach(voice => {
+         console.log(`${voice.name} (${voice.lang})`);
+       });
+   
+       let specificVoice = availableVoices.find(
+         voice => voice.name === "Microsoft Jenny Online (Natural) - English (United States)"
+       );
+   
+       if (!specificVoice) {
+         console.warn("Microsoft Jenny voice not found. Searching for fallback English (United States) voice...");
+         specificVoice = availableVoices.find(
+           voice =>
+             voice.name.toLowerCase().includes("english") &&
+             voice.name.toLowerCase().includes("united states")
+         );
+       }
+   
+       if (!specificVoice) {
+         specificVoice = availableVoices.find(
+           voice => voice.name.toLowerCase().includes("english")
+         );
+       }
+   
+       if (!specificVoice) {
+         specificVoice = availableVoices[0];
+       }
+   
+       setSelectedVoice(specificVoice);
+     };
+   
+     loadVoices();
+     window.speechSynthesis.onvoiceschanged = loadVoices;
+ 
+     window.speechSynthesis.onvoiceschanged = loadVoices;
+     loadVoices();
+   }, []);
+ 
 
   const startAudio = () => {
     const utterance = new SpeechSynthesisUtterance(text);

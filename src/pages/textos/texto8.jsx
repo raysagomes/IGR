@@ -18,27 +18,47 @@ const AudioComponent = () => {
 
   const text = "A Carnival Adventure. Sophie had been looking forward to the carnival all week. She imagined thrilling rides and exciting games. When she got there, her first stop was the Ferris wheel, but it wasn’t moving. Instead, the operator was stuck at the top, waving frantically for help. The crowd below couldn’t stop laughing, and Sophie joined in, snapping a picture of the funny yet unusual sight. Next, Sophie tried her luck at the ring toss. She threw a ring so wildly that it landed on the head of a stuffed bear sitting on the prize shelf. The vendor awarded her the bear, saying: That’s a first! Sophie laughed at her accidental win and hugged the bear tightly, proud of her unique skills. By the end of the day, Sophie realized the carnival wasn’t just about thrills—it was about the unexpected, hilarious moments that made her experience unforgettable. She left with a stuffed bear, sore cheeks from laughing, and a story to share with her friends.";
 
-  useEffect(() => {
-    const loadVoices = () => {
-      const availableVoices = window.speechSynthesis.getVoices();
-      console.log("Available voices:");
-      availableVoices.forEach(voice => {
-        console.log(`${voice.name} (${voice.lang})`);
-      });
-
-      const specificVoice = availableVoices.find(voice => voice.name === "Microsoft Jenny Online (Natural) - English (United States)");
-      if (specificVoice) {
+    useEffect(() => {
+      const loadVoices = () => {
+        const availableVoices = window.speechSynthesis.getVoices();
+        console.log("Available voices:");
+        availableVoices.forEach(voice => {
+          console.log(`${voice.name} (${voice.lang})`);
+        });
+    
+        let specificVoice = availableVoices.find(
+          voice => voice.name === "Microsoft Jenny Online (Natural) - English (United States)"
+        );
+    
+        if (!specificVoice) {
+          console.warn("Microsoft Jenny voice not found. Searching for fallback English (United States) voice...");
+          specificVoice = availableVoices.find(
+            voice =>
+              voice.name.toLowerCase().includes("english") &&
+              voice.name.toLowerCase().includes("united states")
+          );
+        }
+    
+        if (!specificVoice) {
+          specificVoice = availableVoices.find(
+            voice => voice.name.toLowerCase().includes("english")
+          );
+        }
+    
+        if (!specificVoice) {
+          specificVoice = availableVoices[0];
+        }
+    
         setSelectedVoice(specificVoice);
-      } else {
-        console.warn("Microsoft Ana voice not found. Using the first available voice.");
-        setSelectedVoice(availableVoices[0]);
-      }
-    };
-
-    window.speechSynthesis.onvoiceschanged = loadVoices;
-    loadVoices();
-  }, []);
-
+      };
+    
+      loadVoices();
+      window.speechSynthesis.onvoiceschanged = loadVoices;
+  
+      window.speechSynthesis.onvoiceschanged = loadVoices;
+      loadVoices();
+    }, []);
+  
   const startAudio = () => {
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.voice = selectedVoice; 

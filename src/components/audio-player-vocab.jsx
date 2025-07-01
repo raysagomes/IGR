@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlay, faPause, faStop } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlay, faPause, faStop } from "@fortawesome/free-solid-svg-icons";
 
 const AudioPlayerVocab = ({ text, voiceName }) => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -15,17 +15,38 @@ const AudioPlayerVocab = ({ text, voiceName }) => {
       if (voices.length) {
         console.log("Available voices:", voices);
         setAvailableVoices(voices);
-        const specificVoice = voices.find(voice => voice.name === voiceName);
-        if (specificVoice) {
-          setSelectedVoice(specificVoice);
-        } else {
-          console.warn(`${voiceName} voice not found. Using fallback voice.`);
-          setSelectedVoice(voices[0]); 
+
+        let specificVoice = voices.find((voice) => voice.name === voiceName);
+
+        // Se não achar, procura voz com "English" e "United States" no nome
+        if (!specificVoice) {
+          console.warn(
+            `${voiceName} voice not found. Searching for fallback English (United States) voice...`
+          );
+          specificVoice = voices.find(
+            (voice) =>
+              voice.name.toLowerCase().includes("english") &&
+              voice.name.toLowerCase().includes("united states")
+          );
         }
+
+        // Se ainda não achar, pega qualquer voz com "English" no nome
+        if (!specificVoice) {
+          specificVoice = voices.find((voice) =>
+            voice.name.toLowerCase().includes("english")
+          );
+        }
+
+        // Se tudo falhar, usa a primeira disponível
+        if (!specificVoice) {
+          specificVoice = voices[0];
+        }
+
+        setSelectedVoice(specificVoice);
         setLoading(false);
       } else {
         console.warn("No voices available. Retrying...");
-        setTimeout(loadVoices, 100); 
+        setTimeout(loadVoices, 100);
       }
     };
 
@@ -56,14 +77,23 @@ const AudioPlayerVocab = ({ text, voiceName }) => {
   };
 
   return (
-    <div style={{ marginBottom: '1px' }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '1px' }}>
-        <button 
-          onClick={isPlaying ? stopAudio : startAudio} 
-          style={{ fontSize: '0.5rem', padding: '5px 8px', margin: 0, border: 'none', background: 'transparent' }} 
-          disabled={loading} 
+    <div style={{ marginBottom: "1px" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: "1px" }}>
+        <button
+          onClick={isPlaying ? stopAudio : startAudio}
+          style={{
+            fontSize: "0.5rem",
+            padding: "5px 8px",
+            margin: 0,
+            border: "none",
+            background: "transparent",
+          }}
+          disabled={loading}
         >
-          <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} style={{ margin: 0 }} />
+          <FontAwesomeIcon
+            icon={isPlaying ? faPause : faPlay}
+            style={{ margin: 0 }}
+          />
         </button>
         <input
           type="range"
@@ -72,19 +102,29 @@ const AudioPlayerVocab = ({ text, voiceName }) => {
           step="0.1"
           value={rate}
           onChange={(e) => setRate(parseFloat(e.target.value))}
-          style={{ margin: '0 5px', width: '80px', height: '2px' }} 
-          disabled={loading} 
+          style={{ margin: "0 5px", width: "80px", height: "2px" }}
+          disabled={loading}
         />
-        <button 
-          onClick={stopAudio} 
-          style={{ fontSize: '0.5rem', padding: '5px 8px', margin: 0, border: 'none', background: 'transparent' }} 
-          disabled={loading} 
+        <button
+          onClick={stopAudio}
+          style={{
+            fontSize: "0.5rem",
+            padding: "5px 8px",
+            margin: 0,
+            border: "none",
+            background: "transparent",
+          }}
+          disabled={loading}
         >
           <FontAwesomeIcon icon={faStop} style={{ margin: 0 }} />
         </button>
       </div>
-      
-      {loading && <div style={{ fontSize: '0.8rem', color: 'gray' }}>Loading voices...</div>}
+
+      {loading && (
+        <div style={{ fontSize: "0.8rem", color: "gray" }}>
+          Loading voices...
+        </div>
+      )}
     </div>
   );
 };

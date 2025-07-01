@@ -18,26 +18,47 @@ const AudioComponent = () => {
 
   const text = "A Rainy Day at Home. On a rainy afternoon, Thay was at home, enjoying the perfect weather to stay cozy in her room. She loved these days when the sound of rain made her feel peaceful. For Thay, there was nothing better than ordering pizza and watching her favorite movies: *Twilight*, *Harry Potter*, and *Corpse Bride*. She ordered a four-cheese pizza, her favorite, and while waiting for it to arrive, she snuggled in her blanket, getting ready for a movie marathon. When the pizza finally came, Thay was already excited. After eating, she grabbed her chocolate almond ice cream and hid under the blanket to enjoy the movies in total comfort. The afternoon flew by, and Thay felt completely relaxed, with no worries at all. As night fell, she was happy and satisfied, knowing it had been the perfect day";
 
-  useEffect(() => {
-    const loadVoices = () => {
-      const availableVoices = window.speechSynthesis.getVoices();
-      console.log("Available voices:");
-      availableVoices.forEach(voice => {
-        console.log(`${voice.name} (${voice.lang})`);
-      });
-
-      const specificVoice = availableVoices.find(voice => voice.name === "Microsoft Jenny Online (Natural) - English (United States)");
-      if (specificVoice) {
-        setSelectedVoice(specificVoice);
-      } else {
-        console.warn("Microsoft Ana voice not found. Using the first available voice.");
-        setSelectedVoice(availableVoices[0]);
-      }
-    };
-
-    window.speechSynthesis.onvoiceschanged = loadVoices;
-    loadVoices();
-  }, []);
+   useEffect(() => {
+     const loadVoices = () => {
+       const availableVoices = window.speechSynthesis.getVoices();
+       console.log("Available voices:");
+       availableVoices.forEach(voice => {
+         console.log(`${voice.name} (${voice.lang})`);
+       });
+   
+       let specificVoice = availableVoices.find(
+         voice => voice.name === "Microsoft Jenny Online (Natural) - English (United States)"
+       );
+   
+       if (!specificVoice) {
+         console.warn("Microsoft Jenny voice not found. Searching for fallback English (United States) voice...");
+         specificVoice = availableVoices.find(
+           voice =>
+             voice.name.toLowerCase().includes("english") &&
+             voice.name.toLowerCase().includes("united states")
+         );
+       }
+   
+       if (!specificVoice) {
+         specificVoice = availableVoices.find(
+           voice => voice.name.toLowerCase().includes("english")
+         );
+       }
+   
+       if (!specificVoice) {
+         specificVoice = availableVoices[0];
+       }
+   
+       setSelectedVoice(specificVoice);
+     };
+   
+     loadVoices();
+     window.speechSynthesis.onvoiceschanged = loadVoices;
+ 
+     window.speechSynthesis.onvoiceschanged = loadVoices;
+     loadVoices();
+   }, []);
+ 
 
   const startAudio = () => {
     const utterance = new SpeechSynthesisUtterance(text);

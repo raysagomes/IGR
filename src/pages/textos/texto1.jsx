@@ -18,7 +18,7 @@ const AudioComponent = () => {
   const [rate, setRate] = useState(1); 
 
   const text = "Luciana's dog, Max. Luciana has a lovable dog named Max, who is a mixed breed with a lot of personality. Max has a shiny black coat with patches of white on his chest and paws. He’s about three years old and has boundless energy. Every morning, Luciana takes Max to the local park where he loves to chase after his favorite red ball. Max is very friendly and enjoys meeting new people and other dogs. He has a playful habit of running in circles when he gets excited, which always makes Luciana laugh. At home, Max is a loyal companion. He follows Luciana from room to room and always lies at her feet while she reads or works. He’s especially fond of snuggling on the couch in the evenings. Max has a few tricks up his sleeve; he can sit, stay, and even do a little dance on his hind legs. Luciana makes sure Max gets plenty of exercise and loves to take him on long walks through the neighborhood. Despite his energetic nature, Max is also a calm and gentle dog who is very good with children. Luciana often shares stories about Max's antics with her friends, and everyone who meets him is charmed by his friendly demeanor and playful spirit. Max truly brings joy and companionship to Luciana's life.";
-
+ 
   useEffect(() => {
     const loadVoices = () => {
       const availableVoices = window.speechSynthesis.getVoices();
@@ -26,15 +26,35 @@ const AudioComponent = () => {
       availableVoices.forEach(voice => {
         console.log(`${voice.name} (${voice.lang})`);
       });
-
-      const specificVoice = availableVoices.find(voice => voice.name === "Microsoft Jenny Online (Natural) - English (United States)");
-      if (specificVoice) {
-        setSelectedVoice(specificVoice);
-      } else {
-        console.warn("Microsoft Ana voice not found. Using the first available voice.");
-        setSelectedVoice(availableVoices[0]);
+  
+      let specificVoice = availableVoices.find(
+        voice => voice.name === "Microsoft Jenny Online (Natural) - English (United States)"
+      );
+  
+      if (!specificVoice) {
+        console.warn("Microsoft Jenny voice not found. Searching for fallback English (United States) voice...");
+        specificVoice = availableVoices.find(
+          voice =>
+            voice.name.toLowerCase().includes("english") &&
+            voice.name.toLowerCase().includes("united states")
+        );
       }
+  
+      if (!specificVoice) {
+        specificVoice = availableVoices.find(
+          voice => voice.name.toLowerCase().includes("english")
+        );
+      }
+  
+      if (!specificVoice) {
+        specificVoice = availableVoices[0];
+      }
+  
+      setSelectedVoice(specificVoice);
     };
+  
+    loadVoices();
+    window.speechSynthesis.onvoiceschanged = loadVoices;
 
     window.speechSynthesis.onvoiceschanged = loadVoices;
     loadVoices();

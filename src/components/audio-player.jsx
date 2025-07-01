@@ -15,17 +15,35 @@ const AudioPlayer = ({ text, voiceName }) => {
       if (voices.length) {
         console.log("Available voices:", voices);
         setAvailableVoices(voices);
-        const specificVoice = voices.find(voice => voice.name === voiceName);
-        if (specificVoice) {
-          setSelectedVoice(specificVoice);
-        } else {
-          console.warn(`${voiceName} voice not found. Using fallback voice.`);
-          setSelectedVoice(voices[0]); 
+
+        let specificVoice = voices.find((voice) => voice.name === voiceName);
+
+        if (!specificVoice) {
+          console.warn(
+            `${voiceName} voice not found. Searching for fallback English (United States) voice...`
+          );
+          specificVoice = voices.find(
+            (voice) =>
+              voice.name.toLowerCase().includes("english") &&
+              voice.name.toLowerCase().includes("united states")
+          );
         }
+
+        if (!specificVoice) {
+          specificVoice = voices.find((voice) =>
+            voice.name.toLowerCase().includes("english")
+          );
+        }
+
+        if (!specificVoice) {
+          specificVoice = voices[0];
+        }
+
+        setSelectedVoice(specificVoice);
         setLoading(false);
       } else {
         console.warn("No voices available. Retrying...");
-        setTimeout(loadVoices, 100); 
+        setTimeout(loadVoices, 100);
       }
     };
 
@@ -35,7 +53,7 @@ const AudioPlayer = ({ text, voiceName }) => {
     return () => {
       window.speechSynthesis.onvoiceschanged = null;
     };
-  }, [voiceName]);
+  }, [voiceName]);  
 
   const startAudio = () => {
     console.log("Starting audio with voice:", selectedVoice);

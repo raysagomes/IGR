@@ -17,7 +17,6 @@ const AudioComponent = () => {
   const [rate, setRate] = useState(1); 
 
   const text = "The Camping Trip. It was a beautiful weekend when Millie and her friends decided to go camping. They set up their tents by the lake, surrounded by trees and the sounds of nature. The air was fresh, and the sky was clear. They spent the afternoon hiking, exploring the woods, and enjoying each other's company. As the night came, they gathered around the campfire, roasting marshmallows and telling stories. They were all excited about the adventure, but little did they know that something unexpected was about to happen. While they were getting ready to sleep inside their tents, they noticed a large shadow moving near one of the tents. To their shock, it was an alligator! The group froze in fear, unsure of what to do. But just then, a man from Florida appeared, running towards them with confidence. Without hesitation, he rushed toward the alligator and, in an incredible display of bravery, fought the creature off. With a few well-placed moves, he managed to defeat the alligator, sending it fleeing into the woods. Relieved and still in awe of what they had just witnessed, the group thanked the man for his bravery. After the excitement died down, they finally settled back into their tents, feeling safe once again. Despite the terrifying encounter, they all fell asleep, knowing it had been a camping trip they would never forget.";
-
   useEffect(() => {
     const loadVoices = () => {
       const availableVoices = window.speechSynthesis.getVoices();
@@ -25,19 +24,40 @@ const AudioComponent = () => {
       availableVoices.forEach(voice => {
         console.log(`${voice.name} (${voice.lang})`);
       });
-
-      const specificVoice = availableVoices.find(voice => voice.name === "Microsoft Jenny Online (Natural) - English (United States)");
-      if (specificVoice) {
-        setSelectedVoice(specificVoice);
-      } else {
-        console.warn("Microsoft Ana voice not found. Using the first available voice.");
-        setSelectedVoice(availableVoices[0]);
+  
+      let specificVoice = availableVoices.find(
+        voice => voice.name === "Microsoft Jenny Online (Natural) - English (United States)"
+      );
+  
+      if (!specificVoice) {
+        console.warn("Microsoft Jenny voice not found. Searching for fallback English (United States) voice...");
+        specificVoice = availableVoices.find(
+          voice =>
+            voice.name.toLowerCase().includes("english") &&
+            voice.name.toLowerCase().includes("united states")
+        );
       }
+  
+      if (!specificVoice) {
+        specificVoice = availableVoices.find(
+          voice => voice.name.toLowerCase().includes("english")
+        );
+      }
+  
+      if (!specificVoice) {
+        specificVoice = availableVoices[0];
+      }
+  
+      setSelectedVoice(specificVoice);
     };
+  
+    loadVoices();
+    window.speechSynthesis.onvoiceschanged = loadVoices;
 
     window.speechSynthesis.onvoiceschanged = loadVoices;
     loadVoices();
   }, []);
+
 
   const startAudio = () => {
     const utterance = new SpeechSynthesisUtterance(text);
