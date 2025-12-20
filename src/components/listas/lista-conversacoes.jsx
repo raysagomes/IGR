@@ -42,6 +42,66 @@ function ListaConversacoes() {
       <ListGroup.Item as="li" className='mb-3 lista-item'>
       <Link to="/conversacoes/conversacao10" className="text-decoration-none texto-link "> Clara e a Cafeteria</Link>
       </ListGroup.Item>
+      <ListGroup.Item as="li" className='mb-3 lista-item'>
+      <Link to="/conversacoes/conversacao11" className="text-decoration-none texto-link ">Sarah e a Farmácia</Link>
+      </ListGroup.Item>
+      <ListGroup.Item as="li" className='mb-3 lista-item'>
+      <Link to="/conversacoes/conversacao12" className="text-decoration-none texto-link ">Robert e o Banco</Link>
+      </ListGroup.Item>
+      <ListGroup.Item as="li" className='mb-3 lista-item'>
+      <Link to="/conversacoes/conversacao13" className="text-decoration-none texto-link ">Emma e o Posto de Gasolina</Link>
+      </ListGroup.Item>
+      <ListGroup.Item as="li" className='mb-3 lista-item'>
+      <Link to="/conversacoes/conversacao14" className="text-decoration-none texto-link ">Lucas e a Loja de Roupas</Link>
+      </ListGroup.Item>
+      <ListGroup.Item as="li" className='mb-3 lista-item'>
+      <Link to="/conversacoes/conversacao15" className="text-decoration-none texto-link ">Anna e o Médico</Link>
+      </ListGroup.Item>
+      <ListGroup.Item as="li" className='mb-3 lista-item'>
+      <Link to="/conversacoes/conversacao16" className="text-decoration-none texto-link ">Peter e o Táxi</Link>
+      </ListGroup.Item>
+      <ListGroup.Item as="li" className='mb-3 lista-item'>
+      <Link to="/conversacoes/conversacao17" className="text-decoration-none texto-link ">Lisa e o Salão de Beleza</Link>
+      </ListGroup.Item>
+      <ListGroup.Item as="li" className='mb-3 lista-item'>
+      <Link to="/conversacoes/conversacao18" className="text-decoration-none texto-link ">Tom e a Academia</Link>
+      </ListGroup.Item>
+      <ListGroup.Item as="li" className='mb-3 lista-item'>
+      <Link to="/conversacoes/conversacao19" className="text-decoration-none texto-link ">Rachel e o Correio</Link>
+      </ListGroup.Item>
+      <ListGroup.Item as="li" className='mb-3 lista-item'>
+      <Link to="/conversacoes/conversacao20" className="text-decoration-none texto-link ">Kevin e a Livraria</Link>
+      </ListGroup.Item>
+      <ListGroup.Item as="li" className='mb-3 lista-item'>
+      <Link to="/conversacoes/conversacao21" className="text-decoration-none texto-link ">Sophie e o Dentista</Link>
+      </ListGroup.Item>
+      <ListGroup.Item as="li" className='mb-3 lista-item'>
+      <Link to="/conversacoes/conversacao22" className="text-decoration-none texto-link ">Mark e a Oficina</Link>
+      </ListGroup.Item>
+      <ListGroup.Item as="li" className='mb-3 lista-item'>
+      <Link to="/conversacoes/conversacao23" className="text-decoration-none texto-link ">Julia e a Padaria</Link>
+      </ListGroup.Item>
+      <ListGroup.Item as="li" className='mb-3 lista-item'>
+      <Link to="/conversacoes/conversacao24" className="text-decoration-none texto-link ">David e a Escola de Idiomas</Link>
+      </ListGroup.Item>
+      <ListGroup.Item as="li" className='mb-3 lista-item'>
+      <Link to="/conversacoes/conversacao25" className="text-decoration-none texto-link ">Amanda e o Pet Shop</Link>
+      </ListGroup.Item>
+      <ListGroup.Item as="li" className='mb-3 lista-item'>
+      <Link to="/conversacoes/conversacao26" className="text-decoration-none texto-link ">Carlos e a Agência de Viagens</Link>
+      </ListGroup.Item>
+      <ListGroup.Item as="li" className='mb-3 lista-item'>
+      <Link to="/conversacoes/conversacao27" className="text-decoration-none texto-link ">Nicole e a Floricultura</Link>
+      </ListGroup.Item>
+      <ListGroup.Item as="li" className='mb-3 lista-item'>
+      <Link to="/conversacoes/conversacao28" className="text-decoration-none texto-link ">Ryan e a Loja de Eletrônicos</Link>
+      </ListGroup.Item>
+      <ListGroup.Item as="li" className='mb-3 lista-item'>
+      <Link to="/conversacoes/conversacao29" className="text-decoration-none texto-link ">Jessica e o Supermercado</Link>
+      </ListGroup.Item>
+      <ListGroup.Item as="li" className='mb-3 lista-item'>
+      <Link to="/conversacoes/conversacao30" className="text-decoration-none texto-link ">Alex e a Pizzaria</Link>
+      </ListGroup.Item>
 
     </ListGroup>
 

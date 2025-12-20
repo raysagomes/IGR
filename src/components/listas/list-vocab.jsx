@@ -53,6 +53,66 @@ function ListaVocabulario() {
               <ListGroup.Item as="li" className='mb-3 lista-item'>
                 <Link to="/vocab/vocab14" className="text-decoration-none texto-link">Corpo</Link>
               </ListGroup.Item>
+              <ListGroup.Item as="li" className='mb-3 lista-item'>
+                <Link to="/vocab/vocab15" className="text-decoration-none texto-link">Animais</Link>
+              </ListGroup.Item>
+              <ListGroup.Item as="li" className='mb-3 lista-item'>
+                <Link to="/vocab/vocab16" className="text-decoration-none texto-link">Roupas</Link>
+              </ListGroup.Item>
+              <ListGroup.Item as="li" className='mb-3 lista-item'>
+                <Link to="/vocab/vocab17" className="text-decoration-none texto-link">Transporte</Link>
+              </ListGroup.Item>
+              <ListGroup.Item as="li" className='mb-3 lista-item'>
+                <Link to="/vocab/vocab18" className="text-decoration-none texto-link">Profissões</Link>
+              </ListGroup.Item>
+              <ListGroup.Item as="li" className='mb-3 lista-item'>
+                <Link to="/vocab/vocab19" className="text-decoration-none texto-link">Esportes</Link>
+              </ListGroup.Item>
+              <ListGroup.Item as="li" className='mb-3 lista-item'>
+                <Link to="/vocab/vocab20" className="text-decoration-none texto-link">Instrumentos Musicais</Link>
+              </ListGroup.Item>
+              <ListGroup.Item as="li" className='mb-3 lista-item'>
+                <Link to="/vocab/vocab21" className="text-decoration-none texto-link">Clima</Link>
+              </ListGroup.Item>
+              <ListGroup.Item as="li" className='mb-3 lista-item'>
+                <Link to="/vocab/vocab22" className="text-decoration-none texto-link">Escola</Link>
+              </ListGroup.Item>
+              <ListGroup.Item as="li" className='mb-3 lista-item'>
+                <Link to="/vocab/vocab23" className="text-decoration-none texto-link">Tecnologia</Link>
+              </ListGroup.Item>
+              <ListGroup.Item as="li" className='mb-3 lista-item'>
+                <Link to="/vocab/vocab24" className="text-decoration-none texto-link">Natureza</Link>
+              </ListGroup.Item>
+              <ListGroup.Item as="li" className='mb-3 lista-item'>
+                <Link to="/vocab/vocab25" className="text-decoration-none texto-link">Saúde</Link>
+              </ListGroup.Item>
+              <ListGroup.Item as="li" className='mb-3 lista-item'>
+                <Link to="/vocab/vocab26" className="text-decoration-none texto-link">Tempo</Link>
+              </ListGroup.Item>
+              <ListGroup.Item as="li" className='mb-3 lista-item'>
+                <Link to="/vocab/vocab27" className="text-decoration-none texto-link">Dinheiro</Link>
+              </ListGroup.Item>
+              <ListGroup.Item as="li" className='mb-3 lista-item'>
+                <Link to="/vocab/vocab28" className="text-decoration-none texto-link">Viagem</Link>
+              </ListGroup.Item>
+              <ListGroup.Item as="li" className='mb-3 lista-item'>
+                <Link to="/vocab/vocab29" className="text-decoration-none texto-link">Entretenimento</Link>
+              </ListGroup.Item>
+              <ListGroup.Item as="li" className='mb-3 lista-item'>
+                <Link to="/vocab/vocab30" className="text-decoration-none texto-link">Trabalho</Link>
+              </ListGroup.Item>
+              <ListGroup.Item as="li" className='mb-3 lista-item'>
+                <Link to="/vocab/vocab31" className="text-decoration-none texto-link">Comida</Link>
+              </ListGroup.Item>
+              <ListGroup.Item as="li" className='mb-3 lista-item'>
+                <Link to="/vocab/vocab32" className="text-decoration-none texto-link">Cidade</Link>
+              </ListGroup.Item>
+              <ListGroup.Item as="li" className='mb-3 lista-item'>
+                <Link to="/vocab/vocab33" className="text-decoration-none texto-link">Objetos Pessoais</Link>
+              </ListGroup.Item>
+              <ListGroup.Item as="li" className='mb-3 lista-item'>
+                <Link to="/vocab/vocab34" className="text-decoration-none texto-link">Emoções</Link>
+              </ListGroup.Item>
             </ListGroup>
           </Col>
           <Col className="extra-pagina-de-textos d-flex flex-column align-items-end">
